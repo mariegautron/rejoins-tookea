@@ -81,7 +81,7 @@ const resultQuestions = (values: FormikValues) => {
     Ce que tu attends des chef.fe.s de projet : ${values.attendesCDP}
     Ce que tu veux apprendre chez Tara : ${values.learn}
     Tu connais ou pratique SCRUM : ${values.knowScrum}
-    Tu connais des hébergeurs : {values.knowHebergeur}
+    Tu connais des hébergeurs : ${values.knowHebergeur}
     `;
 };
 

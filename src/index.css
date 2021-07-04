@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media screen and (max-width: 576px) {
+  label + .MuiInput-formControl {
+    margin-top: 3rem !important;
+  }
+}
