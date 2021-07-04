@@ -5,18 +5,14 @@ import {
   ListItemText,
   Typography,
 } from "@material-ui/core";
+import CheckIcon from "@material-ui/icons/Check";
 import { FormikValues } from "formik";
 import React from "react";
-import {
-  transformDomain,
-  valueMissionToTab,
-  valuesGitToString,
-} from "../../utils/valuesToString";
+import { transformDomain, valueMissionToTab } from "../../utils/valuesToString";
 import { FormikStep } from "../FormikStep";
-import CheckIcon from "@material-ui/icons/Check";
+import ResultDesign from "../Results/Design";
 import ResultDevMobile from "../Results/DevMobile";
 import ResultDevWeb from "../Results/DevWeb";
-import ResultDesign from "../Results/Design";
 
 function Step13({ values }: FormikValues) {
   console.log("step13", values);

@@ -1,10 +1,6 @@
 import { Typography } from "@material-ui/core";
 import { FormikValues } from "formik";
-import {
-  valuesGitToString,
-  valuesJSToString,
-  valueslinkDesignDevToString,
-} from "../../utils/valuesToString";
+import { valueslinkDesignDevToString } from "../../utils/valuesToString";
 
 const ResultDesign = ({ values }: FormikValues) => {
   return (
