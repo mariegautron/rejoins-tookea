@@ -17,8 +17,6 @@ export interface ValuesType {
   missionCommercial: boolean;
   missionCDP: boolean;
   why: string;
-  whyYou: string;
-  whyUs: string;
   flutter: "oui" | "non";
   flutterTime: string;
   firebase: "oui" | "non";
@@ -39,6 +37,18 @@ export interface ValuesType {
   jira: "oui" | "non";
   doc: "oui" | "non";
   linkDesignDev: "berk" | "com" | "html" | "";
+  strongPoints: string;
+  workWhen: string;
+  jobAlt: string;
+  deadlines: string;
+  autonome: string;
+  workInTeam: string;
+  knowTeam: string;
+  needHelp: string;
+  attendesCDP: string;
+  learn: string;
+  knowScrum: string;
+  knowHebergeur: "oui" | "non";
 }
 
 export const initialValues: ValuesType = {
@@ -60,8 +70,6 @@ export const initialValues: ValuesType = {
   missionCommercial: false,
   missionCDP: false,
   why: "",
-  whyYou: "",
-  whyUs: "",
   flutter: "non",
   flutterTime: "",
   firebase: "non",
@@ -82,6 +90,18 @@ export const initialValues: ValuesType = {
   jira: "non",
   doc: "non",
   linkDesignDev: "",
+  strongPoints: "",
+  workWhen: "",
+  jobAlt: "",
+  deadlines: "",
+  autonome: "",
+  workInTeam: "",
+  knowTeam: "",
+  needHelp: "",
+  attendesCDP: "",
+  learn: "",
+  knowScrum: "",
+  knowHebergeur: "non",
 };
 
 export default initialValues;

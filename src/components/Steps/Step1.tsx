@@ -222,6 +222,7 @@ function Step1() {
           onClick={() => setShowDetails(true)}
           variant="outlined"
           color="primary"
+          style={{ marginBottom: 20 }}
         >
           Découvrir l'équipe en détail
         </CustomButton>
@@ -267,7 +268,7 @@ function Step1() {
               variant="outlined"
               color="primary"
             >
-              Fermer le détails
+              Fermer le détail
             </CustomButton>
           </Box>
         )}

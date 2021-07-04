@@ -1,6 +1,8 @@
 import { Box, Typography } from "@material-ui/core";
 import React from "react";
 import { FormikStep } from "../FormikStep";
+import FormikField from "../FormsControls/FormikField";
+import FormikSelect from "../FormsControls/FormikSelect";
 
 function Step11() {
   return (
@@ -15,6 +17,59 @@ function Step11() {
         >
           ❓ Questions
         </Typography>
+        <FormikField label="Pourquoi venir chez Tara ?" name="why" />
+        <FormikField
+          label="Quels sont tes points forts ?"
+          name="strongPoints"
+        />
+        <FormikField
+          label="Tu travailles plutot le matin, le soir, la nuit ... ?"
+          name="workWhen"
+        />
+        <FormikField
+          label="As-tu une alternance ou un job étudiant ? Quelle fréquence ?"
+          name="jobAlt"
+        />
+        <FormikField
+          label="Tu préfères gérer seul.le ton temps ou qu'on te donnes des deadlines (courtes) ?"
+          name="deadlines"
+        />
+        <FormikField
+          label="Est-ce que tu es autonome ou tu as besoin de quelqu’un avec toi pour t’aider ou te motiver ?"
+          name="autonome"
+        />
+        <FormikField
+          label="Tu prefères travailler seul ou en équipe ?"
+          name="workInTeam"
+        />
+        <FormikField
+          label="Connais-tu déjà quelqu'un dans l'équipe ? Si oui, qui ?"
+          name="knowTeam"
+        />
+        <FormikField
+          label="Tu prefères chercher de ton coté ou demander de l'aide ?"
+          name="needHelp"
+        />
+        <FormikField
+          label="Qu'est ce que tu attends des chef.fe.s de projet ?"
+          name="attendesCDP"
+        />
+        <FormikField
+          label="Qu'est ce que tu veux apprendre chez Tara ?"
+          name="learn"
+        />
+        <FormikField
+          label="Est-ce que tu connais ou tu as pratiqué les mathodes agiles (SCRUM en particulier) ?"
+          name="knowScrum"
+        />
+        <FormikSelect
+          label="Connais-tu des personnes qui louent un hébergement de voyage (airbnb, chambres d’hôtes, hôtel …) ?"
+          name="knowHebergeur"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+        />
       </Box>
     </FormikStep>
   );

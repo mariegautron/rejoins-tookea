@@ -64,6 +64,27 @@ const resultDesign = (values: FormikValues) => {
   `;
 };
 
+const resultQuestions = (values: FormikValues) => {
+  if (values.old === "oui") {
+    return "";
+  }
+  return `**Questions**
+    T'es points forts : ${values.strongPoints}
+    Tu veux venir chez Tara pour : ${values.why}
+    Tu préfères travailler plutot : ${values.workWhen}
+    Tu as une alternance ou un job étudiant ? : ${values.jobAlt}
+    Gérer ton temps ou deadlines ? : ${values.deadlines}
+    Autonome ou tu as besoin de qqn pour t'aider et te motiver ? : ${values.autonome}
+    Travailler seul.le ou en équipe ? : ${values.workInTeam}
+    Tu connais déjà qqn dans l'équipe ? : ${values.knowTeam}
+    Chercher de son coté ou demander de l'aide ? : ${values.needHelp}
+    Ce que tu attends des chef.fe.s de projet : ${values.attendesCDP}
+    Ce que tu veux apprendre chez Tara : ${values.learn}
+    Tu connais ou pratique SCRUM : ${values.knowScrum}
+    Tu connais des hébergeurs : {values.knowHebergeur}
+    `;
+};
+
 const markdown = (values: FormikValues) => `
   *${values.prom} ${transformDomain(values.domain)}*
 
@@ -75,6 +96,7 @@ const markdown = (values: FormikValues) => `
   ${resultDevMobile(values)}
   ${resultDevWeb(values)}
   ${resultDesign(values)}
+  ${resultQuestions(values)}
 `;
 
 export default markdown;

@@ -1,18 +1,13 @@
-import {
-  CircularProgress,
-  MobileStepper,
-  Step,
-  StepLabel,
-  Stepper,
-} from "@material-ui/core";
+import { MobileStepper, Step, StepLabel, Stepper } from "@material-ui/core";
 import { Form, Formik, FormikConfig, FormikValues } from "formik";
 import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
-import CustomButton from "./CustomButton";
-import { FormikStepProps } from "./FormikStep";
 import stepsTab from "../utils/getJourneyTabStep";
 import getLabel from "../utils/getLabelStepper";
 import sendDiscordMessage from "../utils/sendDiscordMessage";
+import BackButton from "./BackButton";
+import { FormikStepProps } from "./FormikStep";
+import NextButton from "./NextButton";
 
 export function FormikStepper({
   children,
@@ -33,11 +28,6 @@ export function FormikStepper({
     return step === stepsJourney[stepsJourney.length - 1];
   }
 
-  console.log("stepsJourney", stepsJourney);
-  console.log("increment", increment);
-  console.log("stepsJourney[increment]", stepsJourney[increment]);
-  console.log("stepsJourney[increment + 1]", stepsJourney[increment + 1]);
-  console.log("stepsJourney[increment - 1]", stepsJourney[increment - 1]);
   return (
     <Formik
       {...props}
@@ -81,34 +71,19 @@ export function FormikStepper({
               activeStep={step}
               steps={childrenArray.length}
               nextButton={
-                <CustomButton
-                  startIcon={
-                    isSubmitting ? <CircularProgress size="1rem" /> : null
-                  }
-                  disabled={isSubmitting}
-                  variant="contained"
-                  color="primary"
-                  type="submit"
-                >
-                  {isSubmitting
-                    ? "Submitting"
-                    : isLastStep()
-                    ? "Submit"
-                    : "Next"}
-                </CustomButton>
+                <NextButton
+                  isSubmitting={isSubmitting}
+                  isLastStep={isLastStep}
+                />
               }
               backButton={
-                <CustomButton
-                  disabled={isSubmitting}
-                  variant="contained"
-                  color="primary"
-                  onClick={() => {
-                    setStep(stepsJourney[increment - 1]);
-                    setIncrement((i) => i - 1);
-                  }}
-                >
-                  Back
-                </CustomButton>
+                <BackButton
+                  isSubmitting={isSubmitting}
+                  increment={increment}
+                  setIncrement={setIncrement}
+                  setStep={setStep}
+                  stepsJourney={stepsJourney}
+                />
               }
             />
           )}
@@ -125,17 +100,13 @@ export function FormikStepper({
               }}
             >
               {step > 0 && (
-                <CustomButton
-                  disabled={isSubmitting}
-                  variant="contained"
-                  color="primary"
-                  onClick={() => {
-                    setStep(stepsJourney[increment - 1]);
-                    setIncrement((i) => i - 1);
-                  }}
-                >
-                  Back
-                </CustomButton>
+                <BackButton
+                  isSubmitting={isSubmitting}
+                  increment={increment}
+                  setIncrement={setIncrement}
+                  setStep={setStep}
+                  stepsJourney={stepsJourney}
+                />
               )}
               <div
                 style={{
@@ -144,21 +115,10 @@ export function FormikStepper({
                   width: "100%",
                 }}
               >
-                <CustomButton
-                  startIcon={
-                    isSubmitting ? <CircularProgress size="1rem" /> : null
-                  }
-                  disabled={isSubmitting}
-                  variant="contained"
-                  color="primary"
-                  type="submit"
-                >
-                  {isSubmitting
-                    ? "Submitting"
-                    : isLastStep()
-                    ? "Submit"
-                    : "Next"}
-                </CustomButton>
+                <NextButton
+                  isSubmitting={isSubmitting}
+                  isLastStep={isLastStep}
+                />
               </div>
             </div>
           )}

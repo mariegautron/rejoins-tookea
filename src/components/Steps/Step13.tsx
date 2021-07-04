@@ -68,6 +68,7 @@ function Step13({ values }: FormikValues) {
         {values.old === "non" && values.missionUXUI && (
           <ResultDesign values={values} />
         )}
+        {values.ol === "non" && <ResultDesign values={values} />}
       </Box>
     </FormikStep>
   );
