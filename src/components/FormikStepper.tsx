@@ -33,6 +33,11 @@ export function FormikStepper({
     return step === stepsJourney[stepsJourney.length - 1];
   }
 
+  console.log("stepsJourney", stepsJourney);
+  console.log("increment", increment);
+  console.log("stepsJourney[increment]", stepsJourney[increment]);
+  console.log("stepsJourney[increment + 1]", stepsJourney[increment + 1]);
+  console.log("stepsJourney[increment - 1]", stepsJourney[increment - 1]);
   return (
     <Formik
       {...props}
@@ -99,6 +104,7 @@ export function FormikStepper({
                   color="primary"
                   onClick={() => {
                     setStep(stepsJourney[increment - 1]);
+                    setIncrement((i) => i - 1);
                   }}
                 >
                   Back
@@ -125,6 +131,7 @@ export function FormikStepper({
                   color="primary"
                   onClick={() => {
                     setStep(stepsJourney[increment - 1]);
+                    setIncrement((i) => i - 1);
                   }}
                 >
                   Back

@@ -12,7 +12,7 @@ const resultDevMobile = (values: FormikValues) => {
     values.old === "oui" ||
     (!values.missionDevMobile && !values.missionDevMobileSecu)
   ) {
-    return;
+    return "";
   }
   return `**Développeur.se mobile / cybersécurité**
     Tu as déjà fait du Flutter : ${values.flutter} ${values.flutterTime}
@@ -28,7 +28,7 @@ const resultDevWeb = (values: FormikValues) => {
     values.old === "oui" ||
     (!values.missionDevWebVue && !values.missionDevWebReact)
   ) {
-    return;
+    return "";
   }
   return `**Développeur.se web Vue/React**
     D'après toi, ton niveau en javascript : ${valuesJSToString(
@@ -50,7 +50,7 @@ const resultDevWeb = (values: FormikValues) => {
 
 const resultDesign = (values: FormikValues) => {
   if (values.old === "oui" || !values.missionUXUI) {
-    return;
+    return "";
   }
   return `**Design**
   D'après toi, ton niveau en javascript : ${valuesJSToString(values.javascript)}
@@ -69,7 +69,7 @@ const markdown = (values: FormikValues) => `
 
   Les missions que tu veux faire : 
   ${valueMissionToTab(values).map(
-    (mission) => `- ${mission}   
+    (mission) => `- ${mission}
   `
   )}
   ${resultDevMobile(values)}
