@@ -73,6 +73,7 @@ export function FormikStepper({
 
           {isMobile && (
             <MobileStepper
+              activeStep={step}
               steps={childrenArray.length}
               nextButton={
                 <CustomButton
