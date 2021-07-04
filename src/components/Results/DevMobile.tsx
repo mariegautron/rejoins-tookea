@@ -10,7 +10,7 @@ const ResultDevMobile = ({ values }: FormikValues) => {
         style={{ marginBottom: 20, fontWeight: "bold" }}
         color="textPrimary"
       >
-        Développeur mobile / cybersécurité
+        Développeur.se mobile / cybersécurité
       </Typography>
       <Typography
         variant="body1"

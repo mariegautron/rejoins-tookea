@@ -71,7 +71,7 @@ function Step6() {
             { label: "Oui", value: "oui" },
             { label: "Non", value: "non" },
           ]}
-          name="nuxtORnext"
+          name="strapi"
         />
         <FormikField label="Si autre, dis nous lequel" name="otherStrapi" />
         <FormikSelect

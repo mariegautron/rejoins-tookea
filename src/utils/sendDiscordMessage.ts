@@ -1,13 +1,16 @@
+import { FormikValues } from "formik";
+import markdown from "./discordMessage";
+
 const sleep = (time: number) => new Promise((acc) => setTimeout(acc, time));
 
-const sendDiscordMessage = async (values: any) => {
+const sendDiscordMessage = async (values: FormikValues) => {
   await sleep(3000);
   const contenido = {
     content: "Quelqu'un veut rejoindre Tara !",
     embeds: [
       {
         title: `${values.firstName} ${values.lastName}`,
-        description: `**${values.prom}** ${values.domain}`,
+        description: markdown(values),
       },
     ],
   };

@@ -50,10 +50,10 @@ function Step13({ values }: FormikValues) {
           Les missions que tu veux faire :
         </Typography>
         <List style={{ marginBottom: 20 }}>
-          {valueMissionToTab(values).map((quality) => (
+          {valueMissionToTab(values).map((mission) => (
             <ListItem style={{ padding: 0 }}>
               <CheckIcon style={{ marginRight: 10, maxWidth: 20 }} />
-              <ListItemText primary={quality} />
+              <ListItemText primary={mission} />
             </ListItem>
           ))}
         </List>

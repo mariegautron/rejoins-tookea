@@ -24,7 +24,7 @@ const ResultDesign = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà realisé des prototype avec Figma : {values.proto}
+        Tu as déjà realisé des prototypes avec Figma : {values.proto}
       </Typography>
       <Typography
         variant="body1"
@@ -38,7 +38,7 @@ const ResultDesign = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tes outils de veilles graphique : {values.veille}
+        Tes outils de veille graphique : {values.veille}
       </Typography>
 
       <Typography

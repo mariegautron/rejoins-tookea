@@ -13,7 +13,7 @@ const ResultDevWeb = ({ values }: FormikValues) => {
         style={{ marginBottom: 20, fontWeight: "bold" }}
         color="textPrimary"
       >
-        Développeur web Vue/React
+        Développeur.se web Vue/React
       </Typography>
       <Typography
         variant="body1"
