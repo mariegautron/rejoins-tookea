@@ -49,6 +49,45 @@ export interface ValuesType {
   learn: string;
   knowScrum: string;
   knowHebergeur: "oui" | "non";
+  intecontinue: "oui" | "non";
+  store: "oui" | "non";
+  cybersecu_competences: "oui" | "non";
+  idVisuelle: string;
+  toolsSEO: string;
+  grilles: "oui" | "non";
+  atomicDesign: string;
+  seoXP: string;
+  designSystem: "oui" | "non";
+  variantsFigma: "oui" | "non";
+  illuDesign: "oui" | "non";
+  ortho: "0" | "1" | "2" | "3" | "";
+  lienDesign: string;
+  meta: "oui" | "non";
+  sitemap: "oui" | "non";
+  libWeb: "oui" | "non";
+  storyBook: "oui" | "non";
+  keywords: string;
+  planningRS: "oui2" | "oui1" | "oui" | "non" | "";
+  chefAgile: "oui" | "non" | "ouiPartie" | "theorie" | "";
+  RSfav: string;
+  avisInsta: string;
+  hashtag: string;
+  suiteAdobe: "oui" | "non";
+  chefJira: "oui" | "non";
+  target: "";
+  chefAirtable: "oui" | "non";
+  chef: "oui" | "non";
+  chefCDC: "oui" | "non";
+  chefComm: string;
+  chefMontee: string;
+  changes: string;
+  chefLike: string;
+  chefInvest: string;
+  chefAdapt: string;
+  chefPiege: string;
+  chefPosts: string;
+  chefImpl: string;
+  chefDeadlines: string;
 }
 
 export const initialValues: ValuesType = {
@@ -102,6 +141,45 @@ export const initialValues: ValuesType = {
   learn: "",
   knowScrum: "",
   knowHebergeur: "non",
+  intecontinue: "non",
+  store: "non",
+  cybersecu_competences: "non",
+  idVisuelle: "",
+  grilles: "non",
+  atomicDesign: "",
+  seoXP: "",
+  designSystem: "non",
+  toolsSEO: "",
+  variantsFigma: "non",
+  illuDesign: "non",
+  ortho: "",
+  lienDesign: "",
+  meta: "non",
+  libWeb: "non",
+  sitemap: "non",
+  storyBook: "non",
+  keywords: "",
+  planningRS: "",
+  chefAgile: "",
+  RSfav: "",
+  avisInsta: "",
+  hashtag: "",
+  suiteAdobe: "non",
+  chefJira: "non",
+  target: "",
+  chefAirtable: "non",
+  chef: "non",
+  chefCDC: "non",
+  chefComm: "",
+  chefMontee: "",
+  changes: "",
+  chefLike: "",
+  chefInvest: "",
+  chefAdapt: "",
+  chefPiege: "",
+  chefPosts: "",
+  chefImpl: "",
+  chefDeadlines: "",
 };
 
 export default initialValues;

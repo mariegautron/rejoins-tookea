@@ -24,7 +24,7 @@ function Step6() {
             { label: "1, j'ai eu quelques cours", value: "1" },
             { label: "2, je suis à l'aise", value: "2" },
             {
-              label: "3, je l'utilise régulierement (alternance ou stage)",
+              label: "3, je l'utilise régulièrement (alternance ou stage)",
               value: "3",
             },
           ]}
@@ -83,7 +83,7 @@ function Step6() {
           name="firebase"
         />
         <FormikSelect
-          label="D'après toi quel est ton niveau avec git (gitHub, gitLab) ?"
+          label="D'après toi, quel est ton niveau avec git (gitHub, gitLab) ?"
           items={[
             { label: "0, jamais utilisé", value: "0" },
             {
@@ -101,7 +101,7 @@ function Step6() {
           name="git"
         />
         <FormikSelect
-          label="As-tu déjà travailler avec Jira ?"
+          label="As-tu déjà travaillé avec Jira ?"
           items={[
             { label: "Oui", value: "oui" },
             { label: "Non", value: "non" },
@@ -115,6 +115,22 @@ function Step6() {
             { label: "Non", value: "non" },
           ]}
           name="doc"
+        />
+        <FormikSelect
+          label="As-tu déjà utilisé des librairies de composants UI (comme Bulma ou Buefy) ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="libWeb"
+        />
+        <FormikSelect
+          label="As-tu déjà entendu parlé ou réalisé un StoryBook ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="storyBook"
         />
       </Box>
     </FormikStep>

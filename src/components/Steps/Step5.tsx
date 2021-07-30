@@ -68,6 +68,30 @@ function Step5() {
           ]}
           name="doc"
         />
+        <FormikSelect
+          label="As-tu déjà fait de l'intégration continue (github actions, circle ci, jenkins, travis ... ) ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="intecontinue"
+        />
+        <FormikSelect
+          label="As-tu déjà déployé sur un store (Apple ou Google) ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="store"
+        />
+        <FormikSelect
+          label=" As-tu des compétences en cybersécurité"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="cybersecu_competences"
+        />
       </Box>
     </FormikStep>
   );

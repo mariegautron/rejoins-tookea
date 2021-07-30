@@ -1,8 +1,8 @@
 import { Typography } from "@material-ui/core";
 import { FormikValues } from "formik";
-import { valuesGitToString } from "../../utils/valuesToString";
+import { valuesOrthoToString } from "../../utils/valuesToString";
 
-const ResultDevMobile = ({ values }: FormikValues) => {
+const ComResult = ({ values }: FormikValues) => {
   return (
     <>
       <Typography
@@ -10,67 +10,65 @@ const ResultDevMobile = ({ values }: FormikValues) => {
         style={{ marginBottom: 20, fontWeight: "bold" }}
         color="textPrimary"
       >
-        Développeur.se mobile / cybersécurité
+        SEO Manager
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà fait du Flutter : {values.flutter} <br />{" "}
-        {values.flutter === "oui" && values.flutterTime}
+        Rigoureux.euse en orthographe : {valuesOrthoToString(values.ortho)}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé Firebase : {values.firebase}
+        Pour toi, c'est important de planifier ses publications ? :
+        {values.planningRS}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        D'après toi, ton niveau de git : {valuesGitToString(values.git)}
+        Sur quel réseau social es-tu le plus à l'aise ? : {values.RSfav}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà travaillé avec jira : {values.jira}
+        Qu'est ce que tu penses de notre feed insta (posts, stories) :{" "}
+        {values.avisInsta}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as l'habitude de documenter ton code : {values.doc}
+        Donne nous 3 hashtag que tu peux utiliser sous une publication Tara :
+        {values.hashtag}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà fait de l'intégration continue : {values.intecontinue}
+        Tu as déjà utilisé la suite Adobe ? (surtout InDesign et Illustrator) :{" "}
+        {values.suiteAdobe}
       </Typography>
+
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà déployé sur un store : {values.store}
-      </Typography>
-      <Typography
-        variant="body1"
-        style={{ marginBottom: 20 }}
-        color="textPrimary"
-      >
-        Tu as des compétences en cybersécurité: {values.cybersecu_competences}
+        Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tara ?
+        : {values.target}
       </Typography>
     </>
   );
 };
 
-export default ResultDevMobile;
+export default ComResult;

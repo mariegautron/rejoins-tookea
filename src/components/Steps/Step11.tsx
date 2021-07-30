@@ -23,7 +23,7 @@ function Step11() {
           name="strongPoints"
         />
         <FormikField
-          label="Tu travailles plutot le matin, le soir, la nuit ... ?"
+          label="Tu travailles plutôt le matin, le soir, la nuit ... ?"
           name="workWhen"
         />
         <FormikField
@@ -31,7 +31,7 @@ function Step11() {
           name="jobAlt"
         />
         <FormikField
-          label="Tu préfères gérer seul.le ton temps ou qu'on te donnes des deadlines (courtes) ?"
+          label="Tu préfères gérer seul.le ton temps ou qu'on te donne des deadlines (courtes) ?"
           name="deadlines"
         />
         <FormikField
@@ -39,7 +39,7 @@ function Step11() {
           name="autonome"
         />
         <FormikField
-          label="Tu prefères travailler seul ou en équipe ?"
+          label="Tu préfères travailler seul ou en équipe ?"
           name="workInTeam"
         />
         <FormikField
@@ -47,7 +47,7 @@ function Step11() {
           name="knowTeam"
         />
         <FormikField
-          label="Tu prefères chercher de ton coté ou demander de l'aide ?"
+          label="Tu préfères chercher de ton côté ou demander de l'aide ?"
           name="needHelp"
         />
         <FormikField
@@ -59,7 +59,7 @@ function Step11() {
           name="learn"
         />
         <FormikField
-          label="Est-ce que tu connais ou tu as pratiqué les mathodes agiles (SCRUM en particulier) ?"
+          label="Est-ce que tu connais ou tu as pratiqué les méthodes agiles (SCRUM en particulier) ?"
           name="knowScrum"
         />
         <FormikSelect

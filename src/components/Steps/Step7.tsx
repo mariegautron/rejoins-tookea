@@ -52,7 +52,7 @@ function Step7() {
         <FormikSelect
           label="Les développeurs, pour toi ... "
           items={[
-            { label: "Je ne m'interesse pas au développement", value: "berk" },
+            { label: "Je ne m'intéresse pas au développement", value: "berk" },
             {
               label: "La communication avec eux est indispensable",
               value: "com",
@@ -64,6 +64,52 @@ function Step7() {
             },
           ]}
           name="linkDesignDev"
+        />
+
+        <FormikField
+          label="Que penses-tu de l'identité visuelle de Tara ?"
+          name="idVisuelle"
+        />
+
+        <FormikSelect
+          label="Travailles-tu tes designs avec des grilles ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="grilles"
+        />
+        <FormikField
+          label="As-tu déjà pratiqué ou entendu parlé de l'Atomic Design"
+          name="atomicDesign"
+        />
+        <FormikSelect
+          label="As tu déjà réalisé un design system ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="designSystem"
+        />
+        <FormikSelect
+          label="As tu l'habitude d'utiliser les variants sur Figma ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="variantsFigma"
+        />
+        <FormikSelect
+          label="Réalises-tu tes propres illustrations ?"
+          items={[
+            { label: "Oui", value: "oui" },
+            { label: "Non", value: "non" },
+          ]}
+          name="illuDesign"
+        />
+        <FormikField
+          label="Si tu as un compte Instagram, Behance, ou un drive de tes créations, partage le lien ici !"
+          name="lienDesign"
         />
       </Box>
     </FormikStep>

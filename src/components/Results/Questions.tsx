@@ -30,7 +30,7 @@ const ResultQuestions = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu préfères travailler plutot : {values.workWhen}
+        Tu préfères travailler plutôt : {values.workWhen}
       </Typography>
       <Typography
         variant="body1"
@@ -73,7 +73,7 @@ const ResultQuestions = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Chercher de son coté ou demander de l'aide ? : {values.needHelp}
+        Chercher de son côté ou demander de l'aide ? : {values.needHelp}
       </Typography>
       <Typography
         variant="body1"

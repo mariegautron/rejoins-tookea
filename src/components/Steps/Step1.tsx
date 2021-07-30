@@ -2,13 +2,12 @@ import { Box, Typography } from "@material-ui/core";
 import { Field } from "formik";
 import { CheckboxWithLabel } from "formik-material-ui";
 import React, { useState } from "react";
+import mockup from "../../assets/mockup.webp";
+import teamPic from "../../assets/team.jpg";
+import { team, teamLost } from "../../data/team";
 import CardEquipe from "../CardTeam";
 import CustomButton from "../CustomButton";
 import { FormikStep } from "../FormikStep";
-import { team, teamLost } from "../../data/team";
-import mockup from "../../assets/mockup.webp";
-
-import teamPic from "../../assets/team.jpg";
 
 function Step1() {
   const [showDetails, setShowDetails] = useState(false);
@@ -37,9 +36,9 @@ function Step1() {
           style={{ marginBottom: 50 }}
           color="textPrimary"
         >
-          Tara, est une application de voyage qui s'adapte à ton budget. Tu
-          entres ton budget, la ville de départ et le nombre de personne et Tara
-          te trouve des destinations adaptées avec hébergements, trajet et
+          Tara est une application de voyage qui s'adapte à ton budget. Tu
+          entres ton budget, la ville de départ et le nombre de personnes et
+          Tara te trouve des destinations adaptées avec hébergement, trajet et
           activités comprises.
         </Typography>
         <Typography
@@ -72,8 +71,8 @@ function Step1() {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          <b>Les voyageurs</b> : Les personnes comme vous et moi, qui recherche
-          un voyage et qui ne demande qu'a partir.
+          <b>Les voyageurs</b> : Les personnes comme vous et moi, qui
+          recherchent un voyage et qui ne demandent qu'à partir.
         </Typography>
         <Typography
           variant="body2"
@@ -82,7 +81,7 @@ function Step1() {
           color="textPrimary"
         >
           <b>Les hébergeurs</b> : Etablissements de voyage ou toute personne
-          louant un hébergement (chambres d'hôtes, airbnb, hôtel, hébergement
+          louant un hébergement (chambres d'hôtes, airbnb, hôtel, hébergements
           insolites...) qui publient/gèrent leurs hébergements proposés sur
           l'application.
         </Typography>
@@ -119,8 +118,8 @@ function Step1() {
           color="textPrimary"
         >
           <b> Application web </b> : Interface hébergeur (NuxtJS/Firebase) +
-          ajouter d'une interface voyageur (NuxtJS/Firebase) et d'un centre
-          d'aide (Strapi/NextJS) pour 2021-2022
+          ajout d'une interface voyageur (NuxtJS/Firebase) et d'un centre d'aide
+          (Strapi/NextJS) pour 2021-2022
         </Typography>
         <Typography
           variant="subtitle2"
@@ -145,8 +144,8 @@ function Step1() {
           color="textPrimary"
         >
           Beaucoup de points sont à retravailler et à rediscuter, nous sommes
-          ouvert à toute proposition et pressé de tu regardes le projet avec un
-          regard neuf
+          ouvert à toute proposition et pressés d'avoir ton regard neuf sur le
+          projet
         </Typography>
         <Typography
           variant="subtitle2"
@@ -193,11 +192,11 @@ function Step1() {
           style={{ marginBottom: 50 }}
           color="textPrimary"
         >
-          Globalement, l'équipe est constitué d'étudiants d'Ynov Nantes de tout
+          Globalement, l'équipe est constituée d'étudiants d'Ynov Nantes de tous
           niveaux. Cependant, étant une association nous avons des membres "non
-          Ynov" principalement des amis ou de la famille qui nous aide dans le
+          Ynov" principalement des amis ou de la famille qui nous aident dans le
           projet mais qui sont moins présent. Nous prenons aussi des stagiaires
-          que ce soit de personnes d'Ynov ou d'ailleurs.
+          que ce soit des personnes d'Ynov ou d'ailleurs.
         </Typography>
         <Typography
           variant="body2"
@@ -205,7 +204,7 @@ function Step1() {
           style={{ marginBottom: 20, fontWeight: "bold" }}
           color="textPrimary"
         >
-          En 2020-2021, l'équipe était constitué de 15 personnes d'Ynov et
+          En 2020-2021, l'équipe était constituée de 15 personnes d'Ynov et
           environ 4 personnes hors-Ynov.
         </Typography>
         <Typography
@@ -214,9 +213,9 @@ function Step1() {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          Les membres du pôle audiovisuel Tara vont créer leur propre équipe
-          Tara Studio, on ne va donc pas vous les présenter ici, même si on sera
-          amener à régulièrement travailler avec eux.
+          Les membres du pôle audiovisuel Tara vont créer leur propre équipe,
+          Tara Studio, on ne va donc pas vous les présenter ici, même si nous
+          serons amenés à travailler régulièrement avec eux.
         </Typography>
         <CustomButton
           onClick={() => setShowDetails(true)}
@@ -251,7 +250,7 @@ function Step1() {
               style={{ marginBottom: 20 }}
               color="textPrimary"
             >
-              Ces membres Tara quittent le projet Ydays mais reste dans
+              Ces membres Tara quittent le projet Ydays mais restent dans
               l'association. Dans nos coeurs ils sont de la team !
             </Typography>
             {teamLost.map(({ img, name, jobs, cursus, description }) => (

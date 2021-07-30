@@ -1,8 +1,8 @@
 import { Box, Typography } from "@material-ui/core";
 import React from "react";
+import logo from "../../assets/logo.png";
 import { FormikStep } from "../FormikStep";
 import FormikSelect from "../FormsControls/FormikSelect";
-import logo from "../../assets/logo.png";
 
 function Step0() {
   return (
@@ -27,10 +27,10 @@ function Step0() {
           variant="subtitle2"
           align="center"
           style={{ marginBottom: 50 }}
-          color="primary"
+          color="textPrimary"
         >
-          Que tu sois ancien ou nouveau remplit ce formulaire pour qu'on sache
-          qui tu es et quelles missions tu veux faire !
+          Que tu sois ancien ou nouveau remplis ce formulaire pour que l'on
+          sache qui tu es et quelles missions tu veux faire !
         </Typography>
         <Typography
           variant="body2"
@@ -39,10 +39,25 @@ function Step0() {
           color="textPrimary"
         >
           Si tu es nouveau, ce formulaire te présentera aussi le projet et
-          l'équipe pour que tu sache dans quoi tu t'embarques. Les réponses nous
-          serons envoyés directement sur notre Discord, nous te recontacterons
-          si on a d'autres questions. N'hesite pas aussi à nous contacter si tu
-          as des questions !
+          l'équipe pour que tu saches dans quoi tu t'embarques. Les réponses
+          nous serons envoyées directement sur notre Discord, nous te
+          recontacterons si on a d'autres questions. N'hésite pas aussi à nous
+          contacter si tu as des questions !
+        </Typography>
+        <Typography
+          variant="subtitle2"
+          align="center"
+          style={{
+            marginBottom: 50,
+            padding: 20,
+            backgroundColor: "#FAF3F6",
+          }}
+          color="primary"
+        >
+          Attention, en fonction de tes réponses, le questionnaire peut être un
+          peu long, installe toi bien et mets toi dans de bonnes conditions.
+          Pour les questions ouvertes, décris-nous ce que tu penses ou tes
+          expériences, cela nous permettra de mieux te connaître.
         </Typography>
         <Box paddingBottom={4} width="100%">
           <FormikSelect

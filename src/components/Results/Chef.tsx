@@ -1,11 +1,8 @@
 import { Typography } from "@material-ui/core";
 import { FormikValues } from "formik";
-import {
-  valuesGitToString,
-  valuesJSToString,
-} from "../../utils/valuesToString";
+import { valuesChefAgileToString } from "../../utils/valuesToString";
 
-const ResultDevWeb = ({ values }: FormikValues) => {
+const ResultChef = ({ values }: FormikValues) => {
   return (
     <>
       <Typography
@@ -13,103 +10,109 @@ const ResultDevWeb = ({ values }: FormikValues) => {
         style={{ marginBottom: 20, fontWeight: "bold" }}
         color="textPrimary"
       >
-        Développeur.se web Vue/React
+        Chef de projet
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        D'après toi, ton niveau en javascript :
-        {valuesJSToString(values.javascript)}
+        Tu as déjà été Chef de projet: {values.chef}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as l'habitude de découper ton code en composants :{" "}
-        {values.composants}
+        Tu es à l'aise avec les méthodes Agiles :{" "}
+        {valuesChefAgileToString(values.chefAgile)}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé VueJS : {values.vueJS} <br />{" "}
-        {values.vueJS === "oui" && values.vueJSTime}
+        Tu sais utiliser Jira : {values.chefJira}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé React : {values.react} <br />{" "}
-        {values.react === "oui" && values.reactTime}
+        Tu sais utiliser AirTable : {values.chefAirtable}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé NuxtJS ou NextJS : {values.nuxtORnext}
+        Tu as déjà réalisé un cahier des charges : {values.chefCDC}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé Strapi ou un autre CMS Headless: {values.strapi}
-        {values.otherStrapi ? (
-          <>
-            <br /> {values.otherStrapi}
-          </>
-        ) : null}
+        Tes idées pour la communication entre équipes : {values.chefComm}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé Firebase : {values.firebase}
+        Tes idées pour la montée en compétences : {values.chefMontee}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        D'après toi, ton niveau de git : {valuesGitToString(values.git)}
+        Ce qui te plait dans le rôle de chef de projet : {values.chefLike}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà travaillé avec jira : {values.jira}
+        Tes actions si un membre n'est pas investi : {values.chefInvest}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as l'habitude de documenter ton code : {values.doc}
+        Ton adaptation dans l'équipe : {values.chefAdapt}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu a déjà utilisé des librairies de composants UI : {values.libWeb}
+        Ton action si un membre n'a rien fait en 1 semaine : {values.chefPiege}
       </Typography>
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu connais les StoryBook : {values.storyBook}
+        Les posts que tu connais chez Tara : {values.chefPosts}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Ton action pour l'implication des membres : {values.chefImpl}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Ton avis sur les deadlines : {values.chefDeadlines}
       </Typography>
     </>
   );
 };
 
-export default ResultDevWeb;
+export default ResultChef;

@@ -24,7 +24,7 @@ const ResultDesign = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà realisé des prototypes avec Figma : {values.proto}
+        Tu as déjà réalisé des prototypes avec Figma : {values.proto}
       </Typography>
       <Typography
         variant="body1"
@@ -46,8 +46,57 @@ const ResultDesign = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Les developpeurs pour toi :
+        Les développeurs pour toi :
         {valueslinkDesignDevToString(values.linkDesignDev)}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Ton avis sur l'identité visuelle de Tara : {values.idVisuelle}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Tu travailles avec des grilles : {values.grilles}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Tu connais l'Atomic Design : {values.atomicDesign}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Tu as déjà utilisé le design System : {values.designSystem}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Tu utilises les variants sur Figma : {values.variantsFigma}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Tu réalises tes illustrations : {values.illuDesign}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Le lien vers tes travaux : {values.lienDesign}
       </Typography>
     </>
   );

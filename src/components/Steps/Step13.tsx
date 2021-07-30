@@ -1,4 +1,7 @@
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Box,
   List,
   ListItem,
@@ -6,16 +9,20 @@ import {
   Typography,
 } from "@material-ui/core";
 import CheckIcon from "@material-ui/icons/Check";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { FormikValues } from "formik";
 import React from "react";
 import { transformDomain, valueMissionToTab } from "../../utils/valuesToString";
 import { FormikStep } from "../FormikStep";
+import ResultChef from "../Results/Chef";
+import ComResult from "../Results/Com";
 import ResultDesign from "../Results/Design";
 import ResultDevMobile from "../Results/DevMobile";
 import ResultDevWeb from "../Results/DevWeb";
+import ResultQuestions from "../Results/Questions";
+import SEOResult from "../Results/SEO";
 
 function Step13({ values }: FormikValues) {
-  console.log("step13", values);
   return (
     <FormikStep label="Results">
       <Box paddingBottom={4} style={{ marginTop: 20, marginBottom: 50 }}>
@@ -28,6 +35,7 @@ function Step13({ values }: FormikValues) {
         >
           ✈️ Résultats
         </Typography>
+
         <Typography
           variant="body1"
           style={{ marginBottom: 20, fontWeight: "bold" }}
@@ -57,18 +65,43 @@ function Step13({ values }: FormikValues) {
             </ListItem>
           ))}
         </List>
-        {values.old === "non" &&
-          (values.missionDevMobile || values.missionDevMobileSecu) && (
-            <ResultDevMobile values={values} />
-          )}
-        {values.old === "non" &&
-          (values.missionDevWebVue || values.missionDevWebReact) && (
-            <ResultDevWeb values={values} />
-          )}
-        {values.old === "non" && values.missionUXUI && (
-          <ResultDesign values={values} />
-        )}
-        {values.ol === "non" && <ResultDesign values={values} />}
+        <Accordion style={{ padding: 10, marginBottom: 20 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            Voir le détails de mes réponses
+          </AccordionSummary>
+          <AccordionDetails style={{ display: "block" }}>
+            {values.old === "non" &&
+              (values.missionDevMobile || values.missionDevMobileSecu) && (
+                <ResultDevMobile values={values} />
+              )}
+            {values.old === "non" &&
+              (values.missionDevWebVue || values.missionDevWebReact) && (
+                <ResultDevWeb values={values} />
+              )}
+            {values.old === "non" && values.missionUXUI && (
+              <ResultDesign values={values} />
+            )}
+            {values.old === "non" && values.missionSEO && (
+              <SEOResult values={values} />
+            )}
+            {values.old === "non" && values.missionComManager && (
+              <ComResult values={values} />
+            )}
+            {values.missionCDP && <ResultChef values={values} />}
+
+            <ResultQuestions values={values} />
+            {values.old === "oui" && (
+              <Typography
+                variant="body1"
+                style={{ marginBottom: 20 }}
+                color="textPrimary"
+              >
+                Qu'est ce que tu n'as pas aimé chez Tara l'année dernière et que
+                tu ne veux pas revoir cette année ? {values.changes}
+              </Typography>
+            )}
+          </AccordionDetails>
+        </Accordion>
       </Box>
     </FormikStep>
   );

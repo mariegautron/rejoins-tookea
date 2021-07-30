@@ -65,7 +65,7 @@ function Step4() {
 
         <Typography variant="body1" gutterBottom align="center">
           Un commentaire ? Tu veux modifier un rôle ou faire un autre rôle que
-          ceux qui sont décris. Dis nous tout!
+          ceux qui sont décris ? Dis nous tout!
         </Typography>
         <FormikField label="Autre" name="missionAutre" />
       </Box>

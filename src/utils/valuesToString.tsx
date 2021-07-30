@@ -69,3 +69,31 @@ export const valueslinkDesignDevToString = (
       return "";
   }
 };
+
+export const valuesOrthoToString = (ortho: "0" | "1" | "2" | "3") => {
+  switch (ortho) {
+    case "0":
+      return "Oui, je fais rarement des fautes";
+    case "1":
+      return "Je fais un peu de fautes";
+    case "2":
+      return "Je fais beaucoup de fautes";
+    case "3":
+      return "Oui, je fais rarement des fautes";
+  }
+};
+
+export const valuesChefAgileToString = (
+  chefAgile: "oui" | "non" | "ouiPartie" | "theorie"
+) => {
+  switch (chefAgile) {
+    case "oui":
+      return "Oui, j'en ai déjà mise une en place";
+    case "non":
+      return "Je ne connais pas";
+    case "ouiPartie":
+      return "Oui, j'ai déjà fait partie d'une équipe agile";
+    case "theorie":
+      return "J'ai eu des cours théoriques";
+  }
+};

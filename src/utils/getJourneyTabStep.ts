@@ -5,6 +5,10 @@ const stepsTab = (values: FormikValues) => {
   if (values.old === "oui") {
     tab.push(3);
     tab.push(4);
+    if (values.missionCDP) {
+      tab.push(10);
+    }
+    tab.push(11);
     tab.push(12);
     tab.push(13);
   } else {
@@ -24,7 +28,7 @@ const stepsTab = (values: FormikValues) => {
     if (values.missionSEO || values.missionComManager) {
       tab.push(8);
     }
-    if (values.missionCommercial) {
+    if (values.missionComManager) {
       tab.push(9);
     }
     if (values.missionCDP) {

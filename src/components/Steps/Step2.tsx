@@ -27,8 +27,8 @@ function Step2() {
           Pourquoi nous rejoindre ?
         </Typography>
         <iframe
-          width="300"
-          height="167"
+          width="100%"
+          height="500"
           src="https://www.youtube.com/embed/XS3BAMxHkAk"
           title="YouTube video player"
           frameBorder="0"
@@ -65,7 +65,7 @@ function Step2() {
         <CardMedia
           component="video"
           image={video}
-          autoPlay
+          controls
           style={{ marginBottom: 20 }}
         />
         <Typography
@@ -94,7 +94,7 @@ function Step2() {
           color="textPrimary"
         >
           Chez Tara, nous aimons apprendre et surtout nous avons une soif
-          d'excellence. Nous sommes constamment à vouloir nous améliorer c'est
+          d'excellence. Nous sommes constamment à vouloir nous améliorer, c'est
           pourquoi nous pensons que les différences de niveaux nous
           enrichissent. Il nous tient à cœur d'avoir des personnes de tous
           niveaux pour que chacun monte en compétences et apprenne aussi à
@@ -130,8 +130,8 @@ function Step2() {
           travailles plutôt le matin ou l'après-midi, si tu préfères travailler
           seul etc. Chaque personne est considérée à part entière et est libre
           de travailler comme il le souhaite, tant que cela n'impacte pas les
-          autres, le planning est que le résultat (de qualité) soit présent à la
-          fin.
+          autres, le planning. L'important est que le résultat (de qualité) soit
+          présent à la fin.
         </Typography>
         <Typography
           variant="subtitle1"
@@ -189,9 +189,9 @@ function Step2() {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          Les 4 accord tolquèques on été expliqué en détail dans un livre de Don
-          Miguel Ruiz. Mais comme chez Tara, on est pas des flèches, voici une
-          vidéo qui explique les accord toltèques aux enfants :
+          Les 4 accords toltèques ont été expliqué en détail dans un livre de
+          Don Miguel Ruiz. Mais comme chez Tara, on est pas des flèches, voici
+          une vidéo qui explique les accords toltèques aux enfants :
           <a href="https://youtu.be/9AmEbXcbPGE">
             Apprends à devenir un chevalier !
           </a>
