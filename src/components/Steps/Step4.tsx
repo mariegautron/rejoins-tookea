@@ -43,6 +43,15 @@ function Step4() {
           align="center"
           style={{ marginBottom: 20 }}
         >
+          Si jamais tu as pour idée d'aider en gestion de projet en plus de ta
+          missions principale, coches aussi la mission "Chef.fe de projet"
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 20 }}
+        >
           Coche VRAIMENT TOUT ce que tu as envie de faire. Rien n'est gravé dans
           le marbre, tout peut changer en fonction de tes envies et de ta
           personnalité !
