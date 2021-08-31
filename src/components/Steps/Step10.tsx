@@ -17,6 +17,24 @@ function Step10() {
         >
           👑 Chef.fe de projet
         </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Ne paniques pas si tu as l'impression de ne pas tout connaitre. Nous
+          aurons l'occasion de discuter pendant les entretiens.
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Détailles bien tes réponses aux questions avec tes avis, expériences,
+          solutions ... Montre nous le leader qui est en toi !
+        </Typography>
         <FormikSelect
           label="As-tu déjà été chef de projet ?"
           items={[

@@ -24,6 +24,7 @@ const FormikField: React.FC<FormikFieldProps> = ({
         as={TextField}
         label={label}
         name={name}
+        style={{ padding: "30px 0 10px" }}
         fullWidth
         type={type}
         helperText={<ErrorMessage name={name} />}

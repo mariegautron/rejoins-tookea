@@ -118,8 +118,9 @@ function Step1() {
           color="textPrimary"
         >
           <b> Application web </b> : Interface hébergeur (NuxtJS/Firebase) +
-          ajout d'une interface voyageur (NuxtJS/Firebase) et d'un centre d'aide
-          (Strapi/NextJS) pour 2021-2022
+          ajout d'une interface voyageur (NuxtJS/Firebase), une interface admin
+          pour valider les hébergements publiés (pas décidé surement
+          React/Firebase) et d'un centre d'aide (Strapi/NextJS) pour 2021-2022
         </Typography>
         <Typography
           variant="subtitle2"
@@ -226,7 +227,12 @@ function Step1() {
           Découvrir l'équipe en détail
         </CustomButton>
         {showDetails && (
-          <Box display="flex" flexDirection="column" alignItems="center">
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            marginTop={5}
+          >
             {team.map(({ img, name, jobs, cursus, description }) => (
               <CardEquipe
                 img={img}

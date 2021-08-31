@@ -17,6 +17,15 @@ function Step8() {
         >
           📈 SEO
         </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Ne paniques pas si tu as l'impression de ne pas tout connaitre. Nous
+          aurons l'occasion de discuter pendant les entretiens.
+        </Typography>
         <FormikField label="As-tu de l'expérience en SEO ?" name="seoXP" />
         <FormikField
           label="Quels outils utilises-tu pour le SEO ?"

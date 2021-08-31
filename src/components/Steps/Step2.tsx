@@ -2,10 +2,10 @@ import { Box, CardMedia, Typography } from "@material-ui/core";
 import { Field } from "formik";
 import { CheckboxWithLabel } from "formik-material-ui";
 import React from "react";
-import { FormikStep } from "../FormikStep";
-import video from "../../assets/video.mp4";
 import teamPic from "../../assets/team.jpg";
 import teamWork from "../../assets/teamwork.jpg";
+import video from "../../assets/video.mp4";
+import { FormikStep } from "../FormikStep";
 
 function Step2() {
   return (

@@ -74,7 +74,7 @@ const missionsTab = [
     ],
     technos: ["NextJS", "Strapi"],
     qualities: [`Curiosité`, `Rigueur et exigence`, `Bonne communication`],
-    level: `N'importe, Chloé est la pour t'accompagner`,
+    level: `N'importe, Chloé et Marie sont la pour t'accompagner`,
   },
   {
     id: "SEO",

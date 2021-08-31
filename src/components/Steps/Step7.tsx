@@ -17,7 +17,17 @@ function Step7() {
         >
           🎨 Design
         </Typography>
-
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Ne paniques pas si tu as l'impression de ne pas tout connaitre, Marie
+          est la pour t'accompagner et le questionnaire est fait pour poser des
+          questions au maximum. Nous aurons l'occasion de discuter pendant les
+          entretiens.
+        </Typography>
         <FormikSelect
           label="Team XD ou team Figma ?"
           items={[

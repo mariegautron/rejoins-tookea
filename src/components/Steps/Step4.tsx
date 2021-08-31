@@ -9,10 +9,10 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Field } from "formik";
 import { CheckboxWithLabel } from "formik-material-ui";
 import React from "react";
+import missionsTab from "../../data/missions";
 import { FormikStep } from "../FormikStep";
 import FormikField from "../FormsControls/FormikField";
 import Mission from "../Mission";
-import missionsTab from "../../data/missions";
 
 function Step4() {
   return (
@@ -26,6 +26,16 @@ function Step4() {
           color="textPrimary"
         >
           🏁 Quelles missions veux-tu faire ?
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 20 }}
+        >
+          Tu l'auras compris chez Tara, pas d'étiquette c'est TOI qui choisis ce
+          que tu veux faire ! Lis les missions avant de cocher quand meme ! Les
+          niveaux indiqués sont "de préférence" ne t'arrêtes pas à ça.
         </Typography>
         <Typography
           variant="body1"

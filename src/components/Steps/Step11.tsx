@@ -17,6 +17,16 @@ function Step11() {
         >
           ❓ Questions
         </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Il est temps de nous montrer vraiment qui tu es ! Réponds au maximum à
+          ces questions (avis, expériences...). Cela nous donnera un avant goûts
+          avant les entretiens
+        </Typography>
         <FormikField label="Pourquoi venir chez Tara ?" name="why" />
         <FormikField
           label="Quels sont tes points forts ?"

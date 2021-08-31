@@ -49,7 +49,7 @@ const CardEquipe = ({
           style={{ marginBottom: 20, fontStyle: "italic" }}
           color="textPrimary"
         >
-          {cursus} (en 2020-2021)
+          {cursus}
         </Typography>
         <Typography variant="body2" color="textPrimary">
           {description}

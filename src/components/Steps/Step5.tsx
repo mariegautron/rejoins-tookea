@@ -15,7 +15,18 @@ function Step5() {
           style={{ marginBottom: 50 }}
           color="textPrimary"
         >
-          📱 Développeur.se mobile (cybersécurité)
+          📱 Développeur.se mobile
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Ne paniques pas si tu as l'impression de ne pas tout connaitre,
+          Antoine et Thomas sont la pour t'accompagner et le questionnaire est
+          fait pour poser des questions au maximum. Nous aurons l'occasion de
+          discuter pendant les entretiens.
         </Typography>
         <FormikSelect
           label="As-tu déjà fait du Flutter ?"

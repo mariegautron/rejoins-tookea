@@ -17,6 +17,15 @@ function Step9() {
         >
           📈 Community Manager
         </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Ne paniques pas si tu as l'impression de ne pas tout connaitre. Nous
+          aurons l'occasion de discuter pendant les entretiens.
+        </Typography>
         <FormikSelect
           label="Es-tu rigoureux.euse en orthographe ?"
           items={[

@@ -35,7 +35,18 @@ function Step13({ values }: FormikValues) {
         >
           ✈️ Résultats
         </Typography>
-
+        <Typography
+          variant="body1"
+          gutterBottom
+          align="center"
+          style={{ marginBottom: 50 }}
+        >
+          Voici tes réponses. Cliques sur le bouton "Envoyer" pour que les
+          membres Tara reçoivent tes réponses sur leur Discord. Nous te
+          contacterons si nous avons d'autres questions, de ton coté n'hesites
+          pas non plus à nous contacter. Nous t'attendons maintenant aux
+          entretiens d'Ynov, à bientot !
+        </Typography>
         <Typography
           variant="body1"
           style={{ marginBottom: 20, fontWeight: "bold" }}

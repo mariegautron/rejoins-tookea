@@ -45,6 +45,15 @@ function Step0() {
           contacter si tu as des questions !
         </Typography>
         <Typography
+          variant="body2"
+          align="center"
+          style={{ marginBottom: 50, fontWeight: 600 }}
+          color="textPrimary"
+        >
+          Pour nous contacter : Marie Gautron par Teams ou Linkedin ou
+          marie.gautron@ynov.com
+        </Typography>
+        <Typography
           variant="subtitle2"
           align="center"
           style={{
@@ -57,8 +66,11 @@ function Step0() {
           Attention, en fonction de tes réponses, le questionnaire peut être un
           peu long, installe toi bien et mets toi dans de bonnes conditions.
           Pour les questions ouvertes, décris-nous ce que tu penses ou tes
-          expériences, cela nous permettra de mieux te connaître.
+          expériences, cela nous permettra de mieux te connaître. Il ne faut pas
+          que ce questionnaire te fasse peur, nous préférons un bon feeling
+          pendant les entretiens que de "bonnes" réponses sur ce questionnaire.
         </Typography>
+
         <Box paddingBottom={4} width="100%">
           <FormikSelect
             name="old"
