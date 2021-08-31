@@ -140,9 +140,6 @@ const resultCom = (values: FormikValues) => {
 };
 
 const resultQuestions = (values: FormikValues) => {
-  if (values.old === "non") {
-    return "";
-  }
   return `**Questions**
     Tes points forts : ${values.strongPoints}
     Tu veux venir chez Tara pour : ${values.why}
