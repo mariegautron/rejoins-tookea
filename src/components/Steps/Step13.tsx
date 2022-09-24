@@ -17,7 +17,7 @@ import { FormikStep } from "../FormikStep";
 import ResultChef from "../Results/Chef";
 import ComResult from "../Results/Com";
 import ResultDesign from "../Results/Design";
-import ResultDevMobile from "../Results/DevMobile";
+import ResultDevWebBackNode from "../Results/DevMobile";
 import ResultDevWeb from "../Results/DevWeb";
 import ResultQuestions from "../Results/Questions";
 import SEOResult from "../Results/SEO";
@@ -82,11 +82,11 @@ function Step13({ values }: FormikValues) {
           </AccordionSummary>
           <AccordionDetails style={{ display: "block" }}>
             {values.old === "non" &&
-              (values.missionDevMobile || values.missionDevMobileSecu) && (
-                <ResultDevMobile values={values} />
+              values.missionDevWebBackNode && (
+                <ResultDevWebBackNode values={values} />
               )}
             {values.old === "non" &&
-              (values.missionDevWebVue || values.missionDevWebReact) && (
+              (values.missionDevWebFrontSite || values.missionDevWebFrontApp) && (
                 <ResultDevWeb values={values} />
               )}
             {values.old === "non" && values.missionUXUI && (

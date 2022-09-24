@@ -6,15 +6,13 @@ export interface ValuesType {
   old: "oui" | "non";
   teamOK: boolean;
   projectOK: boolean;
-  missionDevMobile: boolean;
+  missionDevWebBackNode: boolean;
   missionAutre: string;
-  missionDevMobileSecu: boolean;
-  missionDevWebVue: boolean;
-  missionDevWebReact: boolean;
+  missionDevWebFrontSite: boolean;
+  missionDevWebFrontApp: boolean;
   missionSEO: boolean;
   missionComManager: boolean;
   missionUXUI: boolean;
-  missionCommercial: boolean;
   missionCDP: boolean;
   why: string;
   flutter: "oui" | "non";
@@ -98,15 +96,13 @@ export const initialValues: ValuesType = {
   old: "non",
   teamOK: false,
   projectOK: false,
-  missionDevMobile: false,
+  missionDevWebBackNode: false,
   missionAutre: "",
-  missionDevMobileSecu: false,
-  missionDevWebVue: false,
-  missionDevWebReact: false,
+  missionDevWebFrontSite: false,
+  missionDevWebFrontApp: false,
   missionSEO: false,
   missionComManager: false,
   missionUXUI: false,
-  missionCommercial: false,
   missionCDP: false,
   why: "",
   flutter: "non",

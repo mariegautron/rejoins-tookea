@@ -11,7 +11,7 @@ const getLabel = (step: number) => {
     case 4:
       return "🏁";
     case 5:
-      return "📱";
+      return "💻";
     case 6:
       return "💻";
     case 7:

@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import { FormikValues } from "formik";
 import { valuesGitToString } from "../../utils/valuesToString";
 
-const ResultDevMobile = ({ values }: FormikValues) => {
+const ResultDevWebBackNode = ({ values }: FormikValues) => {
   return (
     <>
       <Typography
@@ -73,4 +73,4 @@ const ResultDevMobile = ({ values }: FormikValues) => {
   );
 };
 
-export default ResultDevMobile;
+export default ResultDevWebBackNode;

@@ -9,10 +9,10 @@ import {
   valuesOrthoToString,
 } from "./valuesToString";
 
-const resultDevMobile = (values: FormikValues) => {
+const resultDevWebBackNode = (values: FormikValues) => {
   if (
     values.old === "oui" ||
-    (!values.missionDevMobile && !values.missionDevMobileSecu)
+    (!values.missionDevWebBackNode)
   ) {
     return "";
   }
@@ -31,7 +31,7 @@ const resultDevMobile = (values: FormikValues) => {
 const resultDevWeb = (values: FormikValues) => {
   if (
     values.old === "oui" ||
-    (!values.missionDevWebVue && !values.missionDevWebReact)
+    (!values.missionDevWebFrontSite && !values.missionDevWebFrontApp)
   ) {
     return "";
   }
@@ -174,7 +174,7 @@ const markdown = (values: FormikValues) => `
     (mission) => `- ${mission}
   `
   )}
-  ${resultDevMobile(values)}
+  ${resultDevWebBackNode(values)}
   ${resultDevWeb(values)}
   ${resultDesign(values)}
   ${resultSEO(values)}

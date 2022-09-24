@@ -48,11 +48,11 @@ function Step8() {
           name="sitemap"
         />
         <FormikField
-          label="Donne-nous 3 mots qui permettraient de bien référencer Tara"
+          label="Donne-nous 3 mots qui permettraient de bien référencer Tookea bivouac"
           name="keywords"
         />
         <FormikField
-          label="Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tara ?"
+          label="Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tookea bivouac ?"
           name="target"
         />
       </Box>
