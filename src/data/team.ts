@@ -14,7 +14,7 @@ const team = [
     name: "Marie Gautron",
     jobs: "Cheffe de projet - Développeuse web - Designer",
     cursus: "M2 - Expert Développement Web",
-    description: `Tara, c'est son bébé. Elle en parle tous les jours et est très impliquée. En tant que cheffe de projet, elle a une vision globale et parait certainement pour la plus chiante du groupe à relever tous les points qui ne vont pas. Elle est plutôt sympa, quand le projet se passe bien ^^`,
+    description: `Tookea, c'est son bébé. Elle en parle tous les jours et est très impliquée. En tant que cheffe de projet, elle a une vision globale et parait certainement pour la plus chiante du groupe à relever tous les points qui ne vont pas. Elle est plutôt sympa, quand le projet se passe bien ^^`,
   },
   {
     img: Antoine,
@@ -42,14 +42,14 @@ const team = [
     name: "Chloé Noger",
     jobs: "Lead Tech web",
     cursus: "M2 - Expert Développement Web",
-    description: `Chloé fourni le QG de Tara ! On se rejoint chez elle pour les Ydays, accueilli avec une petite bière ! En dehors des Ydays, Chloé est peu présente mais quand elle travaille, on s'en rends vite compte, l'application est terminée 😂 VueJS elle en a marre (et on la comprend ^^), elle est donc à l'origine du Centre d'Aide que nous allons développé en React l'année prochaine. Elle sera aussi cheffe de projet technique et leadera tous les développeurs, peut être même sera t-elle Cheffe de projet ?`,
+    description: `Chloé fourni le QG de Tookea ! On se rejoint chez elle pour les Ydays, accueilli avec une petite bière ! En dehors des Ydays, Chloé est peu présente mais quand elle travaille, on s'en rends vite compte, l'application est terminée 😂 VueJS elle en a marre (et on la comprend ^^), elle est donc à l'origine du Centre d'Aide que nous allons développé en React l'année prochaine. Elle sera aussi cheffe de projet technique et leadera tous les développeurs, peut être même sera t-elle Cheffe de projet ?`,
   },
   {
     img: Olivia,
     name: "Olivia Moreau",
     jobs: "Développeuse web",
     cursus: "B2 - Informatique",
-    description: `Que dire sur Olivia ? C'est un génie ! Elle suit assurément les traces de Martin, et vu sa capacité d'apprentissage on ne doute pas qu'elle dépassera son niveau dans quelques mois. Ses points forts : elle a une vision d'ensemble, une logique imparable et de la suite dans les idées. On espère très fortement qu'elle reprenne la gestion de projet de Tara une fois que les M2 seront partis !`,
+    description: `Que dire sur Olivia ? C'est un génie ! Elle suit assurément les traces de Martin, et vu sa capacité d'apprentissage on ne doute pas qu'elle dépassera son niveau dans quelques mois. Ses points forts : elle a une vision d'ensemble, une logique imparable et de la suite dans les idées. On espère très fortement qu'elle reprenne la gestion de projet de Tookea une fois que les M2 seront partis !`,
   },
 ];
 
@@ -73,7 +73,7 @@ const teamLost = [
     name: "Alice Bodin",
     cursus: "M2 - Direction Artistique Digitale",
     jobs: "Elle était : Directrice Artistique",
-    description: `De part sa double formation (marketing & design), Alice était un pillier dans l'équipe Tara en binome avec Nina pour tout gérer : le marketing, le design et même parfois la gestion de projet. Nous l'avons tous adorer pour son implication, son exigence et son travail incroyable ! Miss her`,
+    description: `De part sa double formation (marketing & design), Alice était un pillier dans l'équipe Tookea en binome avec Nina pour tout gérer : le marketing, le design et même parfois la gestion de projet. Nous l'avons tous adorer pour son implication, son exigence et son travail incroyable ! Miss her`,
   },
 ];
 

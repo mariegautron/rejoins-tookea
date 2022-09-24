@@ -13,7 +13,7 @@ function Step1() {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <FormikStep label="Tara, c'est quoi ?">
+    <FormikStep label="Tookea, c'est quoi ?">
       <Box
         display="flex"
         flexDirection="column"
@@ -27,7 +27,7 @@ function Step1() {
           style={{ marginBottom: 50, marginTop: 50 }}
           color="textPrimary"
         >
-          🌞 Tara, c'est quoi ?
+          🌞 Tookea, c'est quoi ?
         </Typography>
         <img src={mockup} alt="logo" width={300} />
         <Typography
@@ -36,9 +36,9 @@ function Step1() {
           style={{ marginBottom: 50 }}
           color="textPrimary"
         >
-          Tara est une application de voyage qui s'adapte à ton budget. Tu
+          Tookea est une application de voyage qui s'adapte à ton budget. Tu
           entres ton budget, la ville de départ et le nombre de personnes et
-          Tara te trouve des destinations adaptées avec hébergement, trajet et
+          Tookea te trouve des destinations adaptées avec hébergement, trajet et
           activités comprises.
         </Typography>
         <Typography
@@ -48,13 +48,13 @@ function Step1() {
           color="textPrimary"
         >
           Pour en savoir un peu plus, tu peux aller voir ici : <br />
-          <a href="https://tara-voyage.com/">Site Tara</a> <br />
-          <a href="https://www.instagram.com/tara.voyage/">
-            Instragram @tara.voyage
+          <a href="https://Tookea-voyage.com/">Site Tookea</a> <br />
+          <a href="https://www.instagram.com/Tookea.voyage/">
+            Instragram @Tookea.voyage
           </a>{" "}
           <br />
           <a href="https://www.youtube.com/channel/UCtCIWh4mAL94llfGjAExuTA">
-            Youtube Tara Voyage
+            Youtube Tookea Voyage
           </a>
         </Typography>
         <Typography
@@ -136,7 +136,7 @@ function Step1() {
           style={{ marginBottom: 20, fontWeight: "bold" }}
           color="textPrimary"
         >
-          Tara offre uniquement des voyages en France et en voiture
+          Tookea offre uniquement des voyages en France et en voiture
         </Typography>
         <Typography
           variant="body2"
@@ -154,7 +154,7 @@ function Step1() {
           style={{ marginBottom: 20, fontWeight: "bold" }}
           color="primary"
         >
-          Tara est une association à loi 1901 depuis le 8 janvier 2021.
+          Tookea est une association à loi 1901 depuis le 8 janvier 2021.
         </Typography>
       </Box>
       <Box
@@ -185,7 +185,7 @@ function Step1() {
           style={{ marginBottom: 20, fontWeight: "bold" }}
           color="textPrimary"
         >
-          Tara est un projet porté par une équipe formidable. 💕
+          Tookea est un projet porté par une équipe formidable. 💕
         </Typography>
         <Typography
           variant="body2"
@@ -214,8 +214,8 @@ function Step1() {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          Les membres du pôle audiovisuel Tara vont créer leur propre équipe,
-          Tara Studio, on ne va donc pas vous les présenter ici, même si nous
+          Les membres du pôle audiovisuel Tookea vont créer leur propre équipe,
+          Tookea Studio, on ne va donc pas vous les présenter ici, même si nous
           serons amenés à travailler régulièrement avec eux.
         </Typography>
         <CustomButton
@@ -256,7 +256,7 @@ function Step1() {
               style={{ marginBottom: 20 }}
               color="textPrimary"
             >
-              Ces membres Tara quittent le projet Ydays mais restent dans
+              Ces membres Tookea quittent le projet Ydays mais restent dans
               l'association. Dans nos coeurs ils sont de la team !
             </Typography>
             {teamLost.map(({ img, name, jobs, cursus, description }) => (

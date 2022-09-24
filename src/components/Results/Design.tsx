@@ -54,7 +54,7 @@ const ResultDesign = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Ton avis sur l'identité visuelle de Tara : {values.idVisuelle}
+        Ton avis sur l'identité visuelle de Tookea : {values.idVisuelle}
       </Typography>
       <Typography
         variant="body1"

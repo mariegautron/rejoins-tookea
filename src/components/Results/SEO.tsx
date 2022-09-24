@@ -46,7 +46,7 @@ const SEOResult = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        3 mots qui permettraient de bien référencer Tara : {values.keywords}
+        3 mots qui permettraient de bien référencer Tookea : {values.keywords}
       </Typography>
     </>
   );

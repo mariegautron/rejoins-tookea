@@ -37,7 +37,7 @@ const EndPopUp = ({ open, handleClose, handleClickOpen }: any) => {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          Tara a bien reçu ton message sur son Discord, les membres de la team
+          Tookea a bien reçu ton message sur son Discord, les membres de la team
           te recontacterons. Hâte de te rencontrer !
         </Typography>
         <Typography

@@ -21,7 +21,7 @@ function Step0() {
           style={{ marginBottom: 50, marginTop: 50 }}
           color="textPrimary"
         >
-          Rejoins l'équipe Tara
+          Rejoins l'équipe Tookea
         </Typography>
         <Typography
           variant="subtitle2"
@@ -78,7 +78,7 @@ function Step0() {
               { label: "Oui", value: "oui" },
               { label: "Non", value: "non" },
             ]}
-            label="Déjà chez Tara l'année dernière ?"
+            label="Déjà chez Tookea l'année dernière ?"
             required
           />
         </Box>

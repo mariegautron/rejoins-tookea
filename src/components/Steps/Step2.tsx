@@ -93,7 +93,7 @@ function Step2() {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          Chez Tara, nous aimons apprendre et surtout nous avons une soif
+          Chez Tookea, nous aimons apprendre et surtout nous avons une soif
           d'excellence. Nous sommes constamment à vouloir nous améliorer, c'est
           pourquoi nous pensons que les différences de niveaux nous
           enrichissent. Il nous tient à cœur d'avoir des personnes de tous
@@ -123,7 +123,7 @@ function Step2() {
           style={{ marginBottom: 20 }}
           color="textPrimary"
         >
-          Chez Tara, nous voulons connaître chaque membre afin d'intégrer tout
+          Chez Tookea, nous voulons connaître chaque membre afin d'intégrer tout
           le monde au groupe. En connaissant la personnalité et la manière de
           travailler de chacun, nous pouvons adapter notre travail de groupe.
           C'est pourquoi dès le début n’hésite pas à faire savoir si tu
@@ -160,7 +160,7 @@ function Step2() {
           ou bien, en entendre parler de loin. Cela nous tient à cœur, car dans
           le monde du travail il est important de comprendre les métiers avec
           lesquels on travaille, et c'est toujours apprécié d'avoir plusieurs
-          domaines de compétences. C'est pourquoi, chez Tara, nous avons mis en
+          domaines de compétences. C'est pourquoi, chez Tookea, nous avons mis en
           place une journée de Switch ! Qu'est ce que c'est ? Pendant une
           demi-journée, tu travailleras avec le pôle que tu souhaites mais qui
           n'est pas celui dont tu as l'habitude. Et pour le reste de la journée,
@@ -190,7 +190,7 @@ function Step2() {
           color="textPrimary"
         >
           Les 4 accords toltèques ont été expliqué en détail dans un livre de
-          Don Miguel Ruiz. Mais comme chez Tara, on est pas des flèches, voici
+          Don Miguel Ruiz. Mais comme chez Tookea, on est pas des flèches, voici
           une vidéo qui explique les accords toltèques aux enfants :
           <a href="https://youtu.be/9AmEbXcbPGE">
             Apprends à devenir un chevalier !

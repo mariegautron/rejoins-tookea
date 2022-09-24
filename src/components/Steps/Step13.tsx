@@ -42,7 +42,7 @@ function Step13({ values }: FormikValues) {
           style={{ marginBottom: 50 }}
         >
           Voici tes réponses. Cliques sur le bouton "Envoyer" pour que les
-          membres Tara reçoivent tes réponses sur leur Discord. Nous te
+          membres Tookea reçoivent tes réponses sur leur Discord. Nous te
           contacterons si nous avons d'autres questions, de ton coté n'hesites
           pas non plus à nous contacter. Nous t'attendons maintenant aux
           entretiens d'Ynov, à bientot !
@@ -107,7 +107,7 @@ function Step13({ values }: FormikValues) {
                 style={{ marginBottom: 20 }}
                 color="textPrimary"
               >
-                Qu'est ce que tu n'as pas aimé chez Tara l'année dernière et que
+                Qu'est ce que tu n'as pas aimé chez Tookea l'année dernière et que
                 tu ne veux pas revoir cette année ? {values.changes}
               </Typography>
             )}

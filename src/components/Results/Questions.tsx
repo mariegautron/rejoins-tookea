@@ -23,7 +23,7 @@ const ResultQuestions = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu veux venir chez Tara pour : {values.why}
+        Tu veux venir chez Tookea pour : {values.why}
       </Typography>
       <Typography
         variant="body1"
@@ -87,7 +87,7 @@ const ResultQuestions = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Ce que tu veux apprendre chez Tara : {values.learn}
+        Ce que tu veux apprendre chez Tookea : {values.learn}
       </Typography>
       <Typography
         variant="body1"

@@ -6,7 +6,7 @@ const sleep = (time: number) => new Promise((acc) => setTimeout(acc, time));
 const sendDiscordMessage = async (values: FormikValues) => {
   await sleep(3000);
   const contenido = {
-    content: "Quelqu'un veut rejoindre Tara !",
+    content: "Quelqu'un veut rejoindre Tookea !",
     embeds: [
       {
         title: `${values.firstName} ${values.lastName}`,

@@ -47,7 +47,7 @@ const ComResult = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Donne nous 3 hashtag que tu peux utiliser sous une publication Tara :
+        Donne nous 3 hashtag que tu peux utiliser sous une publication Tookea :
         {values.hashtag}
       </Typography>
       <Typography
@@ -64,7 +64,7 @@ const ComResult = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tara ?
+        Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tookea ?
         : {values.target}
       </Typography>
     </>

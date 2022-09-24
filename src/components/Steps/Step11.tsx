@@ -27,7 +27,7 @@ function Step11() {
           ces questions (avis, expériences...). Cela nous donnera un avant goûts
           avant les entretiens
         </Typography>
-        <FormikField label="Pourquoi venir chez Tara ?" name="why" />
+        <FormikField label="Pourquoi venir chez Tookea ?" name="why" />
         <FormikField
           label="Quels sont tes points forts ?"
           name="strongPoints"

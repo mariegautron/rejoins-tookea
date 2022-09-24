@@ -10,10 +10,7 @@ import {
 } from "./valuesToString";
 
 const resultDevWebBackNode = (values: FormikValues) => {
-  if (
-    values.old === "oui" ||
-    (!values.missionDevWebBackNode)
-  ) {
+  if (values.old === "oui" || !values.missionDevWebBackNode) {
     return "";
   }
   return `**Développeur.se mobile / cybersécurité**
@@ -72,7 +69,7 @@ const resultChef = (values: FormikValues) => {
   Tes actions si un membre n'est pas investi : ${values.chefInvest}
   Ton adaptation dans l'équipe : ${values.chefAdapt}
   Ton action si un membre n'a rien fait en 1 semaine : ${values.chefPiege}
-  Les posts que tu connais chez Tara : ${values.chefPosts}
+  Les posts que tu connais chez Tookea : ${values.chefPosts}
   Ton action pour l'implication des membres : ${values.chefImpl}
   Ton avis sur les deadlines : ${values.chefDeadlines}
   `;
@@ -90,7 +87,7 @@ const resultDesign = (values: FormikValues) => {
   Les developpeurs pour toi : ${valueslinkDesignDevToString(
     values.linkDesignDev
   )}
-  Ton avis sur l'identité visuelle de Tara : ${values.idVisuelle}
+  Ton avis sur l'identité visuelle de Tookea : ${values.idVisuelle}
   Tu travailles avec des grilles : ${values.grilles}
   Tu connais l'Atomic Design : ${values.atomicDesign}
   Tu as déjà utilisé le design System : ${values.designSystem}
@@ -109,8 +106,8 @@ const resultSEO = (values: FormikValues) => {
     Les outils que tu utilises en SEO : ${values.toolsSEO}
     Tu sais ce qu'est une balise title et une meta description ? : ${values.meta}
     Tu sais ce qu'est une et à quoi sert un robots.txt et un sitemap : ${values.sitemap}
-    3 mots qui permettrait de bien référencer Tara : ${values.keywords}
-    Pour toi quelles sont les cibles (le type d'utilisateur visé) de Tara ?
+    3 mots qui permettrait de bien référencer Tookea : ${values.keywords}
+    Pour toi quelles sont les cibles (le type d'utilisateur visé) de Tookea ?
     : ${values.target}
     `;
 };
@@ -128,13 +125,13 @@ const resultCom = (values: FormikValues) => {
     Qu'est ce que tu penses de notre feed insta (posts, stories) : ${
       values.avisInsta
     }
-    Donne nous 3 hashtag que tu peux utiliser sous une publication Tara : ${
+    Donne nous 3 hashtag que tu peux utiliser sous une publication Tookea : ${
       values.hashtag
     }
     Tu as déjà utilisé la suite Adobe ? (surtout InDesign et Illustrator) : ${
       values.suiteAdobe
     }
-    Pour toi quelles sont les cibles (le type d'utilisateur visé) de Tara ?
+    Pour toi quelles sont les cibles (le type d'utilisateur visé) de Tookea ?
     : ${values.target}
   `;
 };
@@ -142,7 +139,7 @@ const resultCom = (values: FormikValues) => {
 const resultQuestions = (values: FormikValues) => {
   return `**Questions**
     Tes points forts : ${values.strongPoints}
-    Tu veux venir chez Tara pour : ${values.why}
+    Tu veux venir chez Tookea pour : ${values.why}
     Tu préfères travailler plutot : ${values.workWhen}
     Tu as une alternance ou un job étudiant ? : ${values.jobAlt}
     Gérer ton temps ou deadlines ? : ${values.deadlines}
@@ -151,7 +148,7 @@ const resultQuestions = (values: FormikValues) => {
     Tu connais déjà qqn dans l'équipe ? : ${values.knowTeam}
     Chercher de son coté ou demander de l'aide ? : ${values.needHelp}
     Ce que tu attends des chef.fe.s de projet : ${values.attendesCDP}
-    Ce que tu veux apprendre chez Tara : ${values.learn}
+    Ce que tu veux apprendre chez Tookea : ${values.learn}
     Tu connais ou pratique SCRUM : ${values.knowScrum}
     Tu connais des hébergeurs : ${values.knowHebergeur}
     `;
