@@ -27,7 +27,7 @@ function Step11() {
           ces questions (avis, expériences...). Cela nous donnera un avant goûts
           avant les entretiens
         </Typography>
-        <FormikField label="Pourquoi venir chez Tara ?" name="why" />
+        <FormikField label="Pourquoi venir chez Tookea ?" name="why" />
         <FormikField
           label="Quels sont tes points forts ?"
           name="strongPoints"
@@ -65,7 +65,7 @@ function Step11() {
           name="attendesCDP"
         />
         <FormikField
-          label="Qu'est ce que tu veux apprendre chez Tara ?"
+          label="Qu'est ce que tu veux apprendre chez Tookea ?"
           name="learn"
         />
         <FormikField
@@ -73,7 +73,7 @@ function Step11() {
           name="knowScrum"
         />
         <FormikSelect
-          label="Connais-tu des personnes qui louent un hébergement de voyage (airbnb, chambres d’hôtes, hôtel …) ?"
+          label="As-tu déjà fait du bivouac ?"
           name="knowHebergeur"
           items={[
             { label: "Oui", value: "oui" },

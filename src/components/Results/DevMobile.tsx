@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import { FormikValues } from "formik";
 import { valuesGitToString } from "../../utils/valuesToString";
 
-const ResultDevMobile = ({ values }: FormikValues) => {
+const ResultDevWebBackNode = ({ values }: FormikValues) => {
   return (
     <>
       <Typography
@@ -17,8 +17,15 @@ const ResultDevMobile = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà fait du Flutter : {values.flutter} <br />{" "}
-        {values.flutter === "oui" && values.flutterTime}
+        Tu as déjà fait du Node : {values.node} <br />{" "}
+        {values.node === "oui" && values.nodeTime}
+      </Typography>
+      <Typography
+        variant="body1"
+        style={{ marginBottom: 20 }}
+        color="textPrimary"
+      >
+        Tu as déjà fait du Nest : {values.nest} <br />{" "}
       </Typography>
       <Typography
         variant="body1"
@@ -55,13 +62,7 @@ const ResultDevMobile = ({ values }: FormikValues) => {
       >
         Tu as déjà fait de l'intégration continue : {values.intecontinue}
       </Typography>
-      <Typography
-        variant="body1"
-        style={{ marginBottom: 20 }}
-        color="textPrimary"
-      >
-        Tu as déjà déployé sur un store : {values.store}
-      </Typography>
+
       <Typography
         variant="body1"
         style={{ marginBottom: 20 }}
@@ -73,4 +74,4 @@ const ResultDevMobile = ({ values }: FormikValues) => {
   );
 };
 
-export default ResultDevMobile;
+export default ResultDevWebBackNode;

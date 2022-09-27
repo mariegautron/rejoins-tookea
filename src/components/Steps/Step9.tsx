@@ -66,11 +66,11 @@ function Step9() {
           name="avisInsta"
         />
         <FormikField
-          label="Donne-nous 3 hashtags que tu peux utiliser sous une publication Tara"
+          label="Donne-nous 3 hashtags que tu peux utiliser sous une publication Tookea"
           name="hashtag"
         />
         <FormikField
-          label="Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tara ?"
+          label="Pour toi quelles sont les cibles (le type d'utilisateurs visé) de Tookea ?"
           name="target"
         />
       </Box>

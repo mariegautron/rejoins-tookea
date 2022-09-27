@@ -36,14 +36,6 @@ const ResultDevWeb = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Tu as déjà utilisé VueJS : {values.vueJS} <br />{" "}
-        {values.vueJS === "oui" && values.vueJSTime}
-      </Typography>
-      <Typography
-        variant="body1"
-        style={{ marginBottom: 20 }}
-        color="textPrimary"
-      >
         Tu as déjà utilisé React : {values.react} <br />{" "}
         {values.react === "oui" && values.reactTime}
       </Typography>

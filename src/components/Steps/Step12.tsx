@@ -17,7 +17,7 @@ function Step12() {
           🦖 Des changements à suggerer ?
         </Typography>
         <FormikField
-          label="Qu'est ce que tu n'as pas aimé chez Tara l'année dernière et que tu ne veux pas revoir cette année ?"
+          label="Qu'est ce que tu n'as pas aimé chez Tookea l'année dernière et que tu ne veux pas revoir cette année ?"
           name="changes"
         />
       </Box>

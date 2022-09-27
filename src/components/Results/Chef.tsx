@@ -95,7 +95,7 @@ const ResultChef = ({ values }: FormikValues) => {
         style={{ marginBottom: 20 }}
         color="textPrimary"
       >
-        Les posts que tu connais chez Tara : {values.chefPosts}
+        Les posts que tu connais chez Tookea : {values.chefPosts}
       </Typography>
       <Typography
         variant="body1"

@@ -77,7 +77,7 @@ function Step7() {
         />
 
         <FormikField
-          label="Que penses-tu de l'identité visuelle de Tara ?"
+          label="Que penses-tu de l'identité visuelle de Tookea?"
           name="idVisuelle"
         />
 

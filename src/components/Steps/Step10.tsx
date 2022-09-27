@@ -36,7 +36,7 @@ function Step10() {
           solutions ... Montre nous le leader qui est en toi !
         </Typography>
         <FormikSelect
-          label="As-tu déjà été chef de projet ?"
+          label="As-tu déjà été chef.fe de projet ?"
           items={[
             { label: "Oui", value: "oui" },
             { label: "Non", value: "non" },
@@ -47,7 +47,7 @@ function Step10() {
         <FormikSelect
           label="Es-tu à l'aise avec les méthodes agiles ? (en particulier SCRUM)"
           items={[
-            { label: "Oui, j'en ai déjà mise une en place", value: "oui" },
+            { label: "Oui, j'en ai déjà mis une en place", value: "oui" },
             {
               label: "Oui, j'ai déjà fait partie d'une équipe agile",
               value: "ouiPartie",
@@ -66,14 +66,6 @@ function Step10() {
           name="chefJira"
         />
         <FormikSelect
-          label="Sais-tu utiliser AirTable ?"
-          items={[
-            { label: "Oui", value: "oui" },
-            { label: "Non", value: "non" },
-          ]}
-          name="chefAirtable"
-        />
-        <FormikSelect
           label="AS-tu déjà réalisé un cahier des charges ?"
           items={[
             { label: "Oui", value: "oui" },
@@ -82,11 +74,11 @@ function Step10() {
           name="chefCDC"
         />
         <FormikField
-          label="Que mettrais-tu en place pour améliorer la communication entre les équipes Tara ?"
+          label="Que mettrais-tu en place pour améliorer la communication entre les équipes Tookea ?"
           name="chefComm"
         />
         <FormikField
-          label="Comment favoriserais-tu la montée en compétences des membres de Tara ?"
+          label="Comment favoriserais-tu la montée en compétences des membres de Tookea ?"
           name="chefMontee"
         />
         <FormikField
@@ -98,7 +90,7 @@ function Step10() {
           name="chefInvest"
         />
         <FormikField
-          label="Te sens-tu capable de t'adapter et t'intégrer dans une équipe et un projet déjà en place depuis un an ?"
+          label="Te sens-tu capable de t'adapter et t'intégrer dans une équipe et un projet déjà en place depuis deux ans ?"
           name="chefAdapt"
         />
         <FormikField
@@ -106,7 +98,7 @@ function Step10() {
           name="chefPiege"
         />
         <FormikField
-          label="As-tu connaissance des différents postes chez Tara ? Cite-les :"
+          label="As-tu connaissance des différents postes chez Tookea ? Cite-les :"
           name="chefPosts"
         />
         <FormikField

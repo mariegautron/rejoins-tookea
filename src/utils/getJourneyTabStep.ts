@@ -1,6 +1,7 @@
 import { FormikValues } from "formik";
 
 const stepsTab = (values: FormikValues) => {
+  console.log('values', values)
   let tab = [0];
   if (values.old === "oui") {
     tab.push(3);
@@ -16,10 +17,10 @@ const stepsTab = (values: FormikValues) => {
     tab.push(2);
     tab.push(3);
     tab.push(4);
-    if (values.missionDevMobile || values.missionDevMobileSecu) {
+    if (values.missionDevWebBackNode) {
       tab.push(5);
     }
-    if (values.missionDevWebReact || values.missionDevWebVue) {
+    if (values.missionDevWebFrontSite || values.missionDevWebFrontApp) {
       tab.push(6);
     }
     if (values.missionUXUI) {
@@ -37,6 +38,7 @@ const stepsTab = (values: FormikValues) => {
     tab.push(11);
     tab.push(13);
   }
+  console.log('tab', tab)
   return tab;
 };
 

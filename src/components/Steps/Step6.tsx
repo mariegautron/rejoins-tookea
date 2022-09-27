@@ -15,7 +15,7 @@ function Step6() {
           style={{ marginBottom: 50 }}
           color="textPrimary"
         >
-          💻 Développeur.se web (Vue ou React)
+          💻 Développeur.se web front
         </Typography>
         <Typography
           variant="body1"
@@ -23,8 +23,8 @@ function Step6() {
           align="center"
           style={{ marginBottom: 50 }}
         >
-          Ne paniques pas si tu as l'impression de ne pas tout connaitre, Chloé,
-          Martin, Olivia et Marie sont la pour t'accompagner et le questionnaire
+          Ne paniques pas si tu as l'impression de ne pas tout connaitre,
+          Martin et Olivia sont là pour t'accompagner et le questionnaire
           est fait pour poser des questions au maximum. Nous aurons l'occasion
           de discuter pendant les entretiens.
         </Typography>
@@ -49,15 +49,6 @@ function Step6() {
           ]}
           name="composants"
         />
-        <FormikSelect
-          label="As-tu déjà utilisé VueJS ?"
-          items={[
-            { label: "Oui", value: "oui" },
-            { label: "Non", value: "non" },
-          ]}
-          name="vueJS"
-        />
-        <FormikField label="Si oui, combien de temps ?" name="vueJSTime" />
         <FormikSelect
           label="As-tu déjà utilisé React ?"
           items={[
@@ -86,7 +77,7 @@ function Step6() {
         />
         <FormikField label="Si autre, dis nous lequel" name="otherStrapi" />
         <FormikSelect
-          label="As-tu déjà utilisé Firebase ?"
+          label="As-tu déjà utilisé Supabase/Firebase ?"
           items={[
             { label: "Oui", value: "oui" },
             { label: "Non", value: "non" },
@@ -94,7 +85,7 @@ function Step6() {
           name="firebase"
         />
         <FormikSelect
-          label="D'après toi, quel est ton niveau avec git (gitHub, gitLab) ?"
+          label="D'après toi, quel est ton niveau sur github ?"
           items={[
             { label: "0, jamais utilisé", value: "0" },
             {
@@ -128,7 +119,7 @@ function Step6() {
           name="doc"
         />
         <FormikSelect
-          label="As-tu déjà utilisé des librairies de composants UI (comme Bulma ou Buefy) ?"
+          label="As-tu déjà utilisé des librairies de composants UI (comme MUI) ?"
           items={[
             { label: "Oui", value: "oui" },
             { label: "Non", value: "non" },

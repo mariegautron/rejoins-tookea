@@ -33,7 +33,7 @@ function Step4() {
           align="center"
           style={{ marginBottom: 20 }}
         >
-          Tu l'auras compris chez Tara, pas d'étiquette c'est TOI qui choisis ce
+          Tu l'auras compris chez Tookea, pas d'étiquette c'est TOI qui choisis ce
           que tu veux faire ! Lis les missions avant de cocher quand meme ! Les
           niveaux indiqués sont "de préférence" ne t'arrêtes pas à ça.
         </Typography>

@@ -1,12 +1,15 @@
 import { Box, Typography } from "@material-ui/core";
+import { Variant } from "@material-ui/core/styles/createTypography";
 import React from "react";
 import logo from "../../assets/logo.png";
+import content from "../../data/content";
 import { FormikStep } from "../FormikStep";
 import FormikSelect from "../FormsControls/FormikSelect";
 
 function Step0() {
+  const contentBienvenue = content[0]
   return (
-    <FormikStep label="Bienvenue">
+    <FormikStep label={contentBienvenue.stepLabel}>
       <Box
         display="flex"
         flexDirection="column"
@@ -21,66 +24,45 @@ function Step0() {
           style={{ marginBottom: 50, marginTop: 50 }}
           color="textPrimary"
         >
-          Rejoins l'équipe Tara
+          {contentBienvenue.title}
         </Typography>
-        <Typography
-          variant="subtitle2"
-          align="center"
-          style={{ marginBottom: 50 }}
-          color="textPrimary"
-        >
-          Que tu sois ancien ou nouveau remplis ce formulaire pour que l'on
-          sache qui tu es et quelles missions tu veux faire !
-        </Typography>
-        <Typography
-          variant="body2"
-          align="center"
-          style={{ marginBottom: 50 }}
-          color="textPrimary"
-        >
-          Si tu es nouveau, ce formulaire te présentera aussi le projet et
-          l'équipe pour que tu saches dans quoi tu t'embarques. Les réponses
-          nous serons envoyées directement sur notre Discord, nous te
-          recontacterons si on a d'autres questions. N'hésite pas aussi à nous
-          contacter si tu as des questions !
-        </Typography>
-        <Typography
-          variant="body2"
-          align="center"
-          style={{ marginBottom: 50, fontWeight: 600 }}
-          color="textPrimary"
-        >
-          Pour nous contacter : Marie Gautron par Teams ou Linkedin ou
-          marie.gautron@ynov.com
-        </Typography>
-        <Typography
-          variant="subtitle2"
-          align="center"
-          style={{
-            marginBottom: 50,
-            padding: 20,
-            backgroundColor: "#FAF3F6",
-          }}
-          color="primary"
-        >
-          Attention, en fonction de tes réponses, le questionnaire peut être un
-          peu long, installe toi bien et mets toi dans de bonnes conditions.
-          Pour les questions ouvertes, décris-nous ce que tu penses ou tes
-          expériences, cela nous permettra de mieux te connaître. Il ne faut pas
-          que ce questionnaire te fasse peur, nous préférons un bon feeling
-          pendant les entretiens que de "bonnes" réponses sur ce questionnaire.
-        </Typography>
+        {contentBienvenue.texts.map((text) => {
+          if (text.type === 'quote') {
+            return <Typography
+              variant="subtitle2"
+              align="center"
+              style={{
+                marginBottom: 50,
+                padding: 20,
+                backgroundColor: "#FAF3F6",
+              }}
+              color="primary"
+            >
+              {text.content}
+            </Typography>
+          }
+          return <Typography
+            variant={text.variant as Variant | 'inherit'}
+            align="center"
+            style={{ marginBottom: 50, fontWeight: text.fontWeight || 400 }}
+            color="textPrimary"
+          >
+            {text.content}
+          </Typography>
+        })}
 
         <Box paddingBottom={4} width="100%">
-          <FormikSelect
-            name="old"
-            items={[
-              { label: "Oui", value: "oui" },
-              { label: "Non", value: "non" },
-            ]}
-            label="Déjà chez Tara l'année dernière ?"
-            required
-          />
+          {contentBienvenue.form.map((input) => {
+            if (input.type === 'select') {
+              return <FormikSelect
+                name={input.name}
+                items={input.items}
+                label={input.label}
+                required
+              />
+            }
+          })}
+
         </Box>
       </Box>
     </FormikStep>
