@@ -16,7 +16,7 @@ const sendDiscordMessage = async (values: FormikValues) => {
   };
 
   fetch(
-    "https://discordapp.com/api/webhooks/860837542177538068/OdWvZZjhNPSKvviT47mRYgfvMZ4hBVT_E_QJp-BLNZdLEOSKzz1DX9MH4XXCg6UqaveP",
+    "https://discord.com/api/webhooks/1024309324186648618/FjvaiKMIlmRdhKopvNdI8YLoKQVhbAI3f_oHWFHTbARnN1sPhyG7-56wHcyMT8_CA4Kr",
     {
       method: "POST",
       body: JSON.stringify(contenido),
@@ -24,7 +24,7 @@ const sendDiscordMessage = async (values: FormikValues) => {
     }
   )
     .then((res) => console.log(res))
-    .catch((e) => console.log(e));
+    .catch((e) => console.log(e.message));
 };
 
 export default sendDiscordMessage;

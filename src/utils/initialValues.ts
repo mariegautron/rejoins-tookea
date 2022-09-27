@@ -15,15 +15,14 @@ export interface ValuesType {
   missionUXUI: boolean;
   missionCDP: boolean;
   why: string;
-  flutter: "oui" | "non";
-  flutterTime: string;
+  node: "oui" | "non";
+  nest: "oui" | "non";
+  nodeTime: string;
   firebase: "oui" | "non";
-  vueJS: "oui" | "non";
   react: "oui" | "non";
   javascript: "0" | "1" | "2" | "3";
   nuxtORnext: "oui" | "non";
   strapi: "oui" | "non";
-  vueJSTime: string;
   reactTime: string;
   otherStrapi: string;
   git: "0" | "1" | "2" | "3";
@@ -48,7 +47,6 @@ export interface ValuesType {
   knowScrum: string;
   knowHebergeur: "oui" | "non";
   intecontinue: "oui" | "non";
-  store: "oui" | "non";
   cybersecu_competences: "oui" | "non";
   idVisuelle: string;
   toolsSEO: string;
@@ -105,15 +103,14 @@ export const initialValues: ValuesType = {
   missionUXUI: false,
   missionCDP: false,
   why: "",
-  flutter: "non",
-  flutterTime: "",
+  node: "non",
+  nodeTime: "",
+  nest: "non",
   firebase: "non",
-  vueJS: "non",
   react: "non",
   javascript: "0",
   nuxtORnext: "non",
   strapi: "non",
-  vueJSTime: "",
   reactTime: "",
   otherStrapi: "",
   git: "0",
@@ -138,7 +135,6 @@ export const initialValues: ValuesType = {
   knowScrum: "",
   knowHebergeur: "non",
   intecontinue: "non",
-  store: "non",
   cybersecu_competences: "non",
   idVisuelle: "",
   grilles: "non",

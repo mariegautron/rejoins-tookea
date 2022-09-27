@@ -7,19 +7,7 @@ import FormikSelect from "../FormsControls/FormikSelect";
 function Step5() {
   return (
     <FormikStep label="Dev Mobile">
-      <FormikSelect
-          label="D'après toi quel est ton niveau en javascript ?"
-          items={[
-            { label: "0, jamais utilisé", value: "0" },
-            { label: "1, j'ai eu quelques cours", value: "1" },
-            { label: "2, je suis à l'aise", value: "2" },
-            {
-              label: "3, je l'utilise régulièrement (alternance ou stage)",
-              value: "3",
-            },
-          ]}
-          name="javascript"
-        />
+
       <Box paddingBottom={4} style={{ marginTop: 20, marginBottom: 50 }}>
         <Typography
           variant="h3"
@@ -41,6 +29,19 @@ function Step5() {
           fait pour poser des questions au maximum. Nous aurons l'occasion de
           discuter pendant les entretiens.
         </Typography>
+        <FormikSelect
+          label="D'après toi quel est ton niveau en javascript ?"
+          items={[
+            { label: "0, jamais utilisé", value: "0" },
+            { label: "1, j'ai eu quelques cours", value: "1" },
+            { label: "2, je suis à l'aise", value: "2" },
+            {
+              label: "3, je l'utilise régulièrement (alternance ou stage)",
+              value: "3",
+            },
+          ]}
+          name="javascript"
+        />
         <FormikSelect
           label="As-tu déjà fait du NodeJS ?"
           items={[

@@ -13,14 +13,14 @@ const resultDevWebBackNode = (values: FormikValues) => {
   if (values.old === "oui" || !values.missionDevWebBackNode) {
     return "";
   }
-  return `**Développeur.se mobile / cybersécurité**
-    Tu as déjà fait du Flutter : ${values.flutter} ${values.flutterTime}
+  return `**Développeur.se back-end NodeJS**
+    Tu as déjà fait du Node : ${values.node} ${values.nodeTime}
+    Tu as déjà fait du Nest : ${values.nest}
     Tu as déjà utilisé Firebase : ${values.firebase}
     D'après toi, ton niveau de git : ${valuesGitToString(values.git)}
     Tu as déjà travailler avec jira : ${values.jira}
     Tu as l'habitude de documenter ton code : ${values.doc}
     Tu as déjà fait de l'intégration continue : ${values.intecontinue}
-    Tu as déjà déployé sur un store : ${values.store}
     Tu as des compétences en cybersécurité: ${values.cybersecu_competences}
     `;
 };
@@ -32,12 +32,11 @@ const resultDevWeb = (values: FormikValues) => {
   ) {
     return "";
   }
-  return `**Développeur.se web Vue/React**
+  return `**Développeur.se front-end React**
     D'après toi, ton niveau en javascript : ${valuesJSToString(
       values.javascript
     )}
     Tu as l'habitude de découper ton code en composants : ${values.composants}
-    Tu as déjà utilisé VueJS : ${values.vueJS} ${values.vueJSTime}
     Tu as déjà utilisé React : ${values.react} ${values.reactTime}
     Tu as déjà utilisé NuxtJS ou NextJS : ${values.nuxtORnext}
     Tu as déjà utilisé Strapi ou un autre CMS Headless: ${values.strapi} ${
@@ -150,7 +149,7 @@ const resultQuestions = (values: FormikValues) => {
     Ce que tu attends des chef.fe.s de projet : ${values.attendesCDP}
     Ce que tu veux apprendre chez Tookea : ${values.learn}
     Tu connais ou pratique SCRUM : ${values.knowScrum}
-    Tu connais des hébergeurs : ${values.knowHebergeur}
+    Déjà fait du bivouac ? : ${values.knowHebergeur}
     `;
 };
 

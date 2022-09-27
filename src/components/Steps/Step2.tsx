@@ -6,6 +6,7 @@ import teamPic from "../../assets/team.jpg";
 import teamWork from "../../assets/teamwork.jpg";
 import video from "../../assets/video.mp4";
 import { FormikStep } from "../FormikStep";
+import YoutubeVideo from "../YoutubeVideo";
 
 function Step2() {
   return (
@@ -26,20 +27,11 @@ function Step2() {
         >
           Pourquoi nous rejoindre ?
         </Typography>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/XS3BAMxHkAk"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          style={{ marginBottom: 20 }}
-        ></iframe>
+        <YoutubeVideo youtubeId="RUBI98z1eOo" />
         <Typography
           variant="body2"
           align="center"
-          style={{ marginBottom: 20 }}
+          style={{ marginBottom: 20, marginTop: 20 }}
           color="textPrimary"
         >
           Nous utilisons la méthode SCRUM pour la gestion de projet, dans le but

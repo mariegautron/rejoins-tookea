@@ -1,79 +1,80 @@
-import Marie from "../assets/team/Marie.webp";
-import Alice from "../assets/team/Alice.webp";
-import Antoine from "../assets/team/Antoine.webp";
-import Chloe from "../assets/team/Chloe.webp";
-import Christophe from "../assets/team/Christophe.webp";
-import Martin from "../assets/team/Martin.webp";
-import Nina from "../assets/team/Nina.webp";
-import Olivia from "../assets/team/Olivia.webp";
-import Thomas from "../assets/team/Thomas.webp";
+import Marie from "../assets/team/Marie.png";
+import Antoine from "../assets/team/Antoine.png";
+import Chloe from "../assets/team/Chloe.png";
+import Martin from "../assets/team/Martin.png";
+import Olivia from "../assets/team/Olivia.png";
+import Thomas from "../assets/team/Thomas.png";
+import Camille from "../assets/team/Camille.png";
+import Killian from "../assets/team/Killian.png";
+import Arnaud from "../assets/team/Arnaud.png";
 
 const team = [
   {
     img: Marie,
     name: "Marie Gautron",
-    jobs: "Cheffe de projet - Développeuse web - Designer",
-    cursus: "M2 - Expert Développement Web",
+    jobs: "Présidente de l'association - N'est plus à Ynov mais interlocutrice principale",
+    cursus: "Développeuse front-end chez Troopers",
     description: `Tookea, c'est son bébé. Elle en parle tous les jours et est très impliquée. En tant que cheffe de projet, elle a une vision globale et parait certainement pour la plus chiante du groupe à relever tous les points qui ne vont pas. Elle est plutôt sympa, quand le projet se passe bien ^^`,
-  },
-  {
-    img: Antoine,
-    name: "Antoine Leblanc",
-    jobs: "Développeur mobile",
-    cursus: "M2 - Expert en Développement Logiciel, Mobile & IoT",
-    description: `Antoine est le buveur de bière professionnel de l'équipe. On l'a d'ailleurs embauché pour ça 😂 Derrière son coté fêtard, Antoine est exigent dans son travail et vise l'excellence, tout au long de l'année il est devenu un crack en Flutter et s’apprête à prendre la succession de Christophe en binôme avec Thomas !`,
-  },
-  {
-    img: Thomas,
-    name: "Thomas Mary",
-    jobs: "Développeur mobile",
-    cursus: "M2 - Expert en Développement Logiciel, Mobile & IoT",
-    description: `Ne vous avisez pas de vous asseoir dans le fauteuil de Thomas 😂 C'est certainement un des membres qui travaille le plus dans l'équipe. Exigent tout comme Antoine, il faut que l'application soient développée au pixel prêt ! Il s’apprête lui aussi à prendre la succession de Christophe en binôme avec Antoine`,
   },
   {
     img: Martin,
     name: "Martin Danvers",
     jobs: "Développeur web",
-    cursus: "M1 - Expert Développement Web",
-    description: `Petit B3, devenu grand, il est aujourd'hui le porteur du projet web. Membre le plus présent, Martin à développer quasiment l'entièreté de l'application web. Très autonome, et apprenant très vite, il est devenu un des meilleurs développeur mais chut il ne faut pas lui dire ! L'année prochaine Martin survira les traces de Chloé, pour aider et accompagner les débutants. `,
-  },
-  {
-    img: Chloe,
-    name: "Chloé Noger",
-    jobs: "Lead Tech web",
     cursus: "M2 - Expert Développement Web",
-    description: `Chloé fourni le QG de Tookea ! On se rejoint chez elle pour les Ydays, accueilli avec une petite bière ! En dehors des Ydays, Chloé est peu présente mais quand elle travaille, on s'en rends vite compte, l'application est terminée 😂 VueJS elle en a marre (et on la comprend ^^), elle est donc à l'origine du Centre d'Aide que nous allons développé en React l'année prochaine. Elle sera aussi cheffe de projet technique et leadera tous les développeurs, peut être même sera t-elle Cheffe de projet ?`,
+    description: `Petit B3, devenu grand, il est aujourd'hui le porteur du projet web. Membre le plus présent, Martin à développer quasiment l'entièreté de l'application web. Très autonome, et apprenant très vite, il est devenu un des meilleurs développeur mais chut il ne faut pas lui dire ! Cet année Martin sera celui à qui il faut te référer si tu as des questions sur le développement. `,
   },
+
   {
     img: Olivia,
     name: "Olivia Moreau",
     jobs: "Développeuse web",
     cursus: "B2 - Informatique",
-    description: `Que dire sur Olivia ? C'est un génie ! Elle suit assurément les traces de Martin, et vu sa capacité d'apprentissage on ne doute pas qu'elle dépassera son niveau dans quelques mois. Ses points forts : elle a une vision d'ensemble, une logique imparable et de la suite dans les idées. On espère très fortement qu'elle reprenne la gestion de projet de Tookea une fois que les M2 seront partis !`,
+    description: `Que dire sur Olivia ? C'est un génie ! Elle suit assurément les traces de Martin, et vu sa capacité d'apprentissage on ne doute pas qu'elle dépassera son niveau dans quelques mois. Ses points forts : elle a une vision d'ensemble, une logique imparable et de la suite dans les idées. `,
+  },
+  {
+    img: Arnaud,
+    name: "Arnaud Blessing",
+    jobs: "Chef de projet",
+    cursus: "M1 - Développement web",
+    description: `Nouveau à Ynov mais pas chez Tookea, il a suivi le projet depuis sa naissance ! En arrivant à Ynov, il a décider de reprendre le bébé afin de le voir évoluer en plus. Ses point forts : sa logique imparable, et son intransigence !`,
   },
 ];
 
 const teamLost = [
   {
-    img: Nina,
-    name: "Nina Flipo",
-    cursus: "M2 - Direction Artistique Digitale",
-    jobs: "Elle était : Cheffe de projet - Directrice Artistique",
-    description: `Nina nous quitte à notre grand désespoir. Nina était la maman de l'équipe, elle nous motivait à travailler et nous grondait quand on ne travaillait pas ... C'était une des membres du projet la plus impliquée et certainement LA plus bosseuse. Nina reste dans l'association et nous n’hésiterons pas à la contacter car nous serons perdus sans elle.`,
+    img: Camille,
+    name: "Camille Guérin",
+    jobs: "Associé à Marie pour transformer Tookea en entreprise. Co-fondateur de la future start-up Tookea ?",
+    cursus: "Chef de projet",
+    description: `Camille était premièrement notre dirkub puis nous nous sommes allié pour devenir chef de projet ensemble pour la deuxième année. Inséparables, Marie et Camille travaillent dur pour transformer Tookea en entreprise. Camille sera le deuxième interlocuteur privilégié pour tes questions !`,
   },
   {
-    img: Christophe,
-    name: "Christophe Colineaux",
-    cursus: "Aujourd'hui sur le monde du travail !",
-    jobs: "Il était : Lead Teach Mobile",
-    description: `C'est (c'était 🥲) le crack, le boss, le patron de l'équipe. Mais que ne sait pas faire Christophe ? En tant que dev mobile, il gère sa mère et c'est peu de le dire car il est présent pour aider tous les développeurs. Etant en M2, Christophe quitte le projet Ydays, il reste tout de même dans l'association et on espère secrètement qu'ils sera toujours joignable pour nous aider. .`,
+    img: Antoine,
+    name: "Antoine Leblanc",
+    jobs: "Trésorier chez Tookea",
+    cursus: "Développeur mobile",
+    description: `Antoine est le buveur de bière professionnel de l'équipe. On l'a d'ailleurs embauché pour ça 😂 Derrière son coté fêtard, Antoine est exigent dans son travail et vise l'excellence, tout au long de l'année il est devenu un crack en Flutter et s’apprête à prendre la succession de Christophe en binôme avec Thomas !`,
   },
   {
-    img: Alice,
-    name: "Alice Bodin",
-    cursus: "M2 - Direction Artistique Digitale",
-    jobs: "Elle était : Directrice Artistique",
-    description: `De part sa double formation (marketing & design), Alice était un pillier dans l'équipe Tookea en binome avec Nina pour tout gérer : le marketing, le design et même parfois la gestion de projet. Nous l'avons tous adorer pour son implication, son exigence et son travail incroyable ! Miss her`,
+    img: Killian,
+    name: "Killian Cambert",
+    jobs: "Vice-trésorier chez Tookea",
+    cursus: "Développer web",
+    description: `Killian est le fameux binôme de Martin sur l'application bivouac. A eux deux ils ont développé l'application bivouac actuelle, triste de ne pas voir leur oeuvre sortir au grand jours, ils sont heureux de notre décision de dédié cette année à leur travail !`,
+  },
+  {
+    img: Thomas,
+    name: "Thomas Mary",
+    jobs: "Adhérent de l'association",
+    cursus: "Développeur mobile",
+    description: `Ne vous avisez pas de vous asseoir dans le fauteuil de Thomas 😂 C'est certainement un des membres qui travaille le plus dans l'équipe. Exigent tout comme Antoine, il faut que l'application soient développée au pixel prêt ! Il s’apprête lui aussi à prendre la succession de Christophe en binôme avec Antoine`,
+  },
+  {
+    img: Chloe,
+    name: "Sécrétaire chez Tookea",
+    jobs: "Sécrétaire chez Tookea",
+    cursus: "Développeuse web chez Lonestone",
+    description: `Chloé fourni le QG de Tookea ! On se rejoint chez elle pour les Ydays, accueilli avec une petite bière ! En dehors des Ydays, Chloé est peu présente mais quand elle travaille, on s'en rends vite compte, l'application est terminée 😂  Elle était aussi cheffe de projet technique et leadait tous les développeurs`,
   },
 ];
 
