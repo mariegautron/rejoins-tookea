@@ -1,3 +1,7 @@
+> Cette application permet aux étudiants d'Ynov de candidater pour rejoindre l'équipe de Tookea, une association à but non lucratif qui favorise le slow tourisme et permet le voyage pour tous en développant des outils numériques pour le tourisme local. L'application est développée en React, MUI et permet d'envoyer les résultats du formulaire sur le Discord de Tookea. Elle a remplacé le traditionnel Google Form pour une expérience utilisateur plus immersive et personnalisée.
+
+> Pour en savoir plus : https://marie-gautrons-marvelous-site.webflow.io/project/application-de-candidature-a-lequipe-tookea
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
